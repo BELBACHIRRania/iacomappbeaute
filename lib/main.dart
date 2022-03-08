@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:iacomappbeaute/views/accueil.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 void main() {
@@ -54,16 +55,21 @@ class SplashState extends State<SplashScreen> {
   }
 
   route() {
-    // Navigator.pushReplacement(
-    //     context, MaterialPageRoute(builder: (context) => Body()));
+    Navigator.pushReplacement(
+        context, MaterialPageRoute(builder: (context) => Accueil()));
   }
 
   initScreen(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Container(
-          color: Colors.red[100],
-          child: Image.asset(name),
+      body: Container(
+        height: MediaQuery.of(context).size.height,
+        width: MediaQuery.of(context).size.width,
+        color: Color(0xFFDABCB2),
+        child: Center(
+          child: Image.asset(
+            "assets/images/logo.png",
+            height: 80,
+          ),
         ),
       ),
     );
