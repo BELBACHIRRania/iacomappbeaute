@@ -19,7 +19,7 @@ class _CarouselExampleState extends State<CarouselExample> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SizedBox(
-        height: 300.0,
+        height: 330.0,
         width: double.infinity,
         child: Carousel(
           dotSpacing: 15.0,
