@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:iacomappbeaute/views/carousel_slider.dart';
 import 'package:iacomappbeaute/views/nav_bar.dart';
@@ -46,7 +47,7 @@ class Accueil extends StatelessWidget {
                       SizedBox(height: 15),
                       Container(
                         color: Colors.white,
-                        height: 250,
+                        height: 200,
                         width: MediaQuery.of(context).size.width,
                         child: Column(
                           children: [
@@ -63,106 +64,143 @@ class Accueil extends StatelessWidget {
                             SizedBox(height: 15),
                             SingleChildScrollView(
                               scrollDirection: Axis.horizontal,
-                              child: Column(
-                                children: [
-                                  Row(
-                                    children: [
-                                      //SizedBox(width: 18),
-                                      Container(
-                                        decoration: BoxDecoration(
-                                            shape: BoxShape.circle,
-                                            image: DecorationImage(
-                                              image: AssetImage("assets/images/21.png"),
-                                            )
+                              child: Container(
+                                height: 140,
+                                child: Stack(
+                                  children: [
+                                    Positioned(
+                                      child: Row(
+                                        children: [
+                                          SizedBox(width: 18),
+                                          GestureDetector(
+                                            onTap: () {
+                                              Navigator.push(
+                                                context,
+                                                MaterialPageRoute(builder: (context) => Accueil()),
+                                              );
+                                            },
+                                            child: Container(
+                                              decoration: BoxDecoration(
+                                                  shape: BoxShape.circle,
+                                                  image: DecorationImage(
+                                                    image: AssetImage("assets/images/21.png"),
+                                                  )
+                                              ),
+                                              height: 97,
+                                              width: 100,
+                                            ),
+                                          ),
+                                          SizedBox(width: 15),
+                                      GestureDetector(
+                                        onTap: () {
+                                          Navigator.push(
+                                            context,
+                                            MaterialPageRoute(builder: (context) => Accueil()),
+                                          );
+                                        },
+                                        child: Container(
+                                          decoration: BoxDecoration(
+                                              shape: BoxShape.circle,
+                                              image: DecorationImage(
+                                                image: AssetImage("assets/images/22.png"),
+                                              )
+                                          ),
+                                          height: 97,
+                                          width: 100,
                                         ),
-                                        height: 97,
-                                        width: 100,
                                       ),
-                                      SizedBox(width: 15),
-                                      Container(
-                                        decoration: BoxDecoration(
-                                            shape: BoxShape.circle,
-                                            image: DecorationImage(
-                                              image: AssetImage("assets/images/22.png"),
-                                            )
+                                          SizedBox(width: 15),
+                                      GestureDetector(
+                                        onTap: () {
+                                          Navigator.push(
+                                            context,
+                                            MaterialPageRoute(builder: (context) => Accueil()),
+                                          );
+                                        },
+                                        child: Container(
+                                          decoration: BoxDecoration(
+                                              shape: BoxShape.circle,
+                                              image: DecorationImage(
+                                                image: AssetImage("assets/images/23.png"),
+                                              )
+                                          ),
+                                          height: 97,
+                                          width: 100,
                                         ),
-                                        height: 97,
-                                        width: 100,
                                       ),
-                                      SizedBox(width: 15),
-                                      Container(
-                                        decoration: BoxDecoration(
-                                            shape: BoxShape.circle,
-                                            image: DecorationImage(
-                                              image: AssetImage("assets/images/23.png"),
-                                            )
+                                          SizedBox(width: 15),
+                                      GestureDetector(
+                                        onTap: () {
+                                          Navigator.push(
+                                            context,
+                                            MaterialPageRoute(builder: (context) => Accueil()),
+                                          );
+                                        },
+                                        child: Container(
+                                          decoration: BoxDecoration(
+                                              shape: BoxShape.circle,
+                                              image: DecorationImage(
+                                                image: AssetImage("assets/images/24.png"),
+                                              )
+                                          ),
+                                          height: 97,
+                                          width: 100,
                                         ),
-                                        height: 97,
-                                        width: 100,
                                       ),
-                                      SizedBox(width: 15),
-                                      Container(
-                                        decoration: BoxDecoration(
-                                            shape: BoxShape.circle,
-                                            image: DecorationImage(
-                                              image: AssetImage("assets/images/24.png"),
-                                            )
+                                          SizedBox(width: 15),
+                                      GestureDetector(
+                                        onTap: () {
+                                          Navigator.push(
+                                            context,
+                                            MaterialPageRoute(builder: (context) => Accueil()),
+                                          );
+                                        },
+                                        child: Container(
+                                          decoration: BoxDecoration(
+                                              shape: BoxShape.circle,
+                                              image: DecorationImage(
+                                                image: AssetImage("assets/images/25.png"),
+                                              )
+                                          ),
+                                          height: 97,
+                                          width: 100,
                                         ),
-                                        height: 97,
-                                        width: 100,
                                       ),
-                                      SizedBox(width: 15),
-                                      Container(
-                                        decoration: BoxDecoration(
-                                            shape: BoxShape.circle,
-                                            image: DecorationImage(
-                                              image: AssetImage("assets/images/25.png"),
-                                            )
-                                        ),
-                                        height: 97,
-                                        width: 100,
+                                          SizedBox(width: 15),
+                                        ],
                                       ),
-                                    ],
-                                  ),
-                                  Row(
-                                    children: [
-                                      SizedBox(
-                                        width: 40,
+                                    ),
+                                    Positioned(
+                                      top: 100,
+                                      child: Row(
+                                        children: [
+                                          SizedBox(width: 35),
+                                          Container(
+                                            child: Text("Manicurie"),
+                                          ),
+                                          SizedBox(width: 50),
+                                          Container(
+                                            child: Text("Epilations"),
+                                          ),
+                                          SizedBox(width: 50),
+                                          Container(
+                                            width: 80,
+                                            child: Text("Soins du visage"),
+                                          ),
+                                          SizedBox(width:35),
+                                          Container(
+                                            width: 80,
+                                            child: Text("Soins du corps"),
+                                          ),
+                                          SizedBox(width: 45),
+                                          Container(
+                                            child: Text("Beauté"),
+                                          ),
+                                        ],
                                       ),
-                                      Container(
-                                        //margin: EdgeInsets.only(left: 5, ),
-                                        height: 97,
-                                        width: 70,
-                                        child: Text("Manicurie"),
-                                      ),
-                                      SizedBox(
-                                        width: 30,
-                                      ),
-                                      Container(
-                                        height: 97,
-                                        width: 120,
-                                        child: Text("Epilations"),
-                                      ),
-                                      Container(
-                                        margin: EdgeInsets.only(left: 12, ),
-                                        height: 97,
-                                        width: 120,
-                                        child: Text("Soins du visage"),
-                                      ),
-                                      Container(
-                                        height: 97,
-                                        width: 120,
-                                        child: Text("Soins du corps"),
-                                      ),
-                                      Container(
-                                        //margin: EdgeInsets.only(left: , ),
-                                        height: 97,
-                                        width: 120,
-                                        child: Text("Beauté"),
-                                      ),
-                                    ],
-                                  ),
-                                ],
+                                    ),
+                                  ],
+                                ),
                               )
                             ),
                           ],
@@ -196,6 +234,7 @@ class Accueil extends StatelessWidget {
                                 fontFamily: "QueenSemiBold"),
                             textAlign: TextAlign.justify),
                       ),
+                      SizedBox(height: 15),
                     ]
                 )
             )
