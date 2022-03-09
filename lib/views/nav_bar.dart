@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:iacomappbeaute/views/body.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class NavBar extends StatefulWidget {
@@ -10,12 +11,12 @@ class NavBar extends StatefulWidget {
 }
 
 class NavBarState extends State<NavBar> {
-  int currentindex = 0;
+  int currentIndex = 0;
 
-  savePref(int currentindex) async {
+  savePref(int currentIndex) async {
     SharedPreferences preferences = await SharedPreferences.getInstance();
     setState(() {
-      preferences.setInt("currentindex", currentindex);
+      preferences.setInt("currentIndex", currentIndex);
       preferences.commit();
     });
   }
@@ -28,33 +29,12 @@ class NavBarState extends State<NavBar> {
         children: [
           Container(
             height: 200,
-            color: Color(0xFFFFCC80),
-            child: Column(
-              children: [
-                Container(
-                    margin: EdgeInsets.only(
-                        left: 35, right: 5, bottom: 10, top: 60),
-                    color: Color(0xFFFFCC80),
-                    width: MediaQuery.of(context).size.width,
-                    child: Text(
-                      "IΛCOM",
-                      style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 20,
-                          fontFamily: "QueenBold"),
-                    )),
-                Card(
-                  margin: EdgeInsets.only(left: 95, right: 5, bottom: 10),
-                  color: Colors.white,
-                  child: Text(
-                    " RESTAURANT ",
-                    style: TextStyle(
-                        color: Color(0xFFFFCC80),
-                        fontSize: 20,
-                        fontFamily: "QueenBold"),
-                  ),
-                )
-              ],
+            color: Color(0xFFDABCB2),
+            child: Center(
+              child: Image.asset(
+                "assets/images/logo.png",
+                height: 100,
+              ),
             ),
           ),
           ListTile(
@@ -68,8 +48,8 @@ class NavBarState extends State<NavBar> {
               ),
             ),
             onTap: () async {
-              currentindex = 0;
-              await savePref(currentindex);
+              currentIndex = 0;
+              await savePref(currentIndex);
               Navigator.pop(context);
               // Navigator.push(
               //   context,
@@ -88,13 +68,13 @@ class NavBarState extends State<NavBar> {
                 ),
               ),
               onTap: () async {
-                currentindex = 0;
-                await savePref(currentindex);
+                currentIndex = 0;
+                await savePref(currentIndex);
                 Navigator.pop(context);
-                // Navigator.push(
-                //   context,
-                //   MaterialPageRoute(builder: (context) => Body()),
-                // );
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Body()),
+                );
               }),
           ListTile(
               leading: Icon(FontAwesomeIcons.bookOpen, color: Colors.black87),
@@ -107,18 +87,18 @@ class NavBarState extends State<NavBar> {
                 ),
               ),
               onTap: () async {
-                currentindex = 1;
-                await savePref(currentindex);
+                currentIndex = 1;
+                await savePref(currentIndex);
                 Navigator.pop(context);
-                // Navigator.push(
-                //   context,
-                //   MaterialPageRoute(builder: (context) => Body()),
-                // );
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => Body()),
+                );
               }),
           ListTile(
-              leading: Icon(Icons.restaurant_menu, color: Colors.black87),
+              leading: Icon(Icons.stars, color: Colors.black87),
               title: Text(
-                'Menu',
+                'Prestation',
                 style: TextStyle(
                   fontSize: 17,
                   color: Colors.black,
@@ -126,8 +106,8 @@ class NavBarState extends State<NavBar> {
                 ),
               ),
               onTap: () async {
-                currentindex = 2;
-                await savePref(currentindex);
+                currentIndex = 2;
+                await savePref(currentIndex);
                 Navigator.pop(context);
                 // Navigator.push(
                 //   context,
@@ -145,8 +125,8 @@ class NavBarState extends State<NavBar> {
               ),
             ),
             onTap: () async {
-              currentindex = 3;
-              await savePref(currentindex);
+              currentIndex = 3;
+              await savePref(currentIndex);
               Navigator.pop(context);
               // Navigator.push(
               //   context,
@@ -155,7 +135,7 @@ class NavBarState extends State<NavBar> {
             },
           ),
           ListTile(
-            leading: Icon(Icons.bookmark, color: Colors.black87),
+            leading: Icon(Icons.blur_on, color: Colors.black87),
             title: Text(
               'Actualités',
               style: TextStyle(
@@ -165,8 +145,8 @@ class NavBarState extends State<NavBar> {
               ),
             ),
             onTap: () async {
-              currentindex = 0;
-              await savePref(currentindex);
+              currentIndex = 0;
+              await savePref(currentIndex);
               Navigator.pop(context);
               // Navigator.push(
               //   context,
@@ -189,8 +169,8 @@ class NavBarState extends State<NavBar> {
               ),
             ),
             onTap: () async {
-              currentindex = 4;
-              await savePref(currentindex);
+              currentIndex = 4;
+              await savePref(currentIndex);
               Navigator.pop(context);
               // Navigator.push(
               //   context,

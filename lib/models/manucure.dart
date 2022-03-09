@@ -1,12 +1,12 @@
 import 'dart:convert';
 
-List<Plats> platsFromJson(String str) =>
-    List<Plats>.from(json.decode(str).map((x) => Plats.fromMap(x)));
+List<Manucure> manucureFromJson(String str) =>
+    List<Manucure>.from(json.decode(str).map((x) => Manucure.fromMap(x)));
 
-String platsToJson(List<Plats> data) =>
+String manucureToJson(List<Manucure> data) =>
     json.encode(List<dynamic>.from(data.map((x) => x.toJson())));
 
-class Plats {
+class Manucure {
   String id_act;
   String nom_art;
   String sous_titre;
@@ -15,7 +15,7 @@ class Plats {
   String duree;
   String image_art;
 
-  Plats({
+  Manucure({
     this.id_act,
     this.nom_art,
     this.sous_titre,
@@ -25,7 +25,7 @@ class Plats {
     this.image_art,
   });
 
-  factory Plats.fromMap(Map<String, dynamic> json) => Plats(
+  factory Manucure.fromMap(Map<String, dynamic> json) => Manucure(
         id_act: json["id_act"],
         nom_art: json["nom_art"],
         sous_titre: json["sous_titre"],

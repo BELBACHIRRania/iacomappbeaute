@@ -3,6 +3,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:iacomappbeaute/views/accueil.dart';
 import 'package:iacomappbeaute/views/carte.dart';
 import 'package:iacomappbeaute/views/testt.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class Body extends StatefulWidget {
   @override
@@ -14,6 +15,20 @@ class Body extends StatefulWidget {
 class BodyState extends State<Body> {
 
   int currentIndex = 0;
+
+  getPref() async {
+    SharedPreferences preferences = await SharedPreferences.getInstance();
+    setState(() {
+      preferences.reload();
+      currentIndex = preferences.getInt("currentIndex");
+    });
+  }
+
+  @override
+  void initState() {
+    super.initState();
+    getPref();
+  }
 
   final tabs = [
     Accueil(),

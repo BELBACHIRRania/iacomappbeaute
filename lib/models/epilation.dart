@@ -1,12 +1,12 @@
 import 'dart:convert';
 
-List<Jus> jusFromJson(String str) =>
-    List<Jus>.from(json.decode(str).map((x) => Jus.fromMap(x)));
+List<Epilation> epilationFromJson(String str) =>
+    List<Epilation>.from(json.decode(str).map((x) => Epilation.fromMap(x)));
 
-String jusToJson(List<Jus> data) =>
+String epilationToJson(List<Epilation> data) =>
     json.encode(List<dynamic>.from(data.map((x) => x.toJson())));
 
-class Jus {
+class Epilation {
   String id_act;
   String nom_art;
   String sous_titre;
@@ -15,7 +15,7 @@ class Jus {
   String duree;
   String image_art;
 
-  Jus({
+  Epilation({
     this.id_act,
     this.nom_art,
     this.sous_titre,
@@ -25,7 +25,7 @@ class Jus {
     this.image_art,
   });
 
-  factory Jus.fromMap(Map<String, dynamic> json) => Jus(
+  factory Epilation.fromMap(Map<String, dynamic> json) => Epilation(
         id_act: json["id_act"],
         nom_art: json["nom_art"],
         sous_titre: json["sous_titre"],

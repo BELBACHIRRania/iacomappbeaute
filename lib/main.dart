@@ -25,12 +25,12 @@ class SplashScreen extends StatefulWidget {
 }
 
 class SplashState extends State<SplashScreen> {
-  int currentindex = 0;
+  int currentIndex = 0;
 
-  savePref(int currentindex) async {
+  savePref(int currentIndex) async {
     SharedPreferences preferences = await SharedPreferences.getInstance();
     setState(() {
-      preferences.setInt("currentindex", currentindex);
+      preferences.setInt("currentIndex", currentIndex);
       preferences.commit();
     });
   }
@@ -39,7 +39,7 @@ class SplashState extends State<SplashScreen> {
   void initState() {
     super.initState();
     startTime();
-    savePref(currentindex);
+    savePref(currentIndex);
   }
 
   @override
@@ -50,7 +50,7 @@ class SplashState extends State<SplashScreen> {
   }
 
   startTime() async {
-    var duration = new Duration(seconds: 5);
+    var duration = new Duration(seconds: 1);
     return new Timer(duration, route);
   }
 
