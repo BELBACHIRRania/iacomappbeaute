@@ -1,16 +1,13 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:iacomappbeaute/views/bottomnavigation.dart';
 import 'package:iacomappbeaute/views/carousel_slider.dart';
 import 'package:iacomappbeaute/views/nav_bar.dart';
-import 'package:iacomappbeaute/views/tabbar.dart';
 
 class Accueil extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         backgroundColor: Color(0xFFDABCB2),
-        //bottomNavigationBar: BottomNav(),
         endDrawer: NavBar(),
         appBar: AppBar(
           iconTheme: IconThemeData(color: Colors.black),

@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:iacomappbeaute/views/bottomnavigation.dart';
+import 'package:iacomappbeaute/views/body.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 void main() {

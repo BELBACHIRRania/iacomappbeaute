@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:iacomappbeaute/views/accueil.dart';
 import 'package:iacomappbeaute/views/testt.dart';
 
@@ -11,14 +12,14 @@ class Body extends StatefulWidget {
 
 class BodyState extends State<Body> {
 
-  int currentIndex = 2;
+  int currentIndex = 0;
 
   final tabs = [
+    Accueil(),
+    Accueil(),
+    Accueil(),
     Accueiltest(),
     Accueiltest(),
-    Accueil(),
-    Accueil(),
-    Accueil(),
   ];
 
   @override
@@ -32,20 +33,19 @@ class BodyState extends State<Body> {
         items: [
           BottomNavigationBarItem(
             icon: Icon(
-              Icons.near_me,
+              Icons.home,
             ),
-            title: Text('Contact',
+            title: Text('Accueil',
                 style: TextStyle(
                   fontSize: 10,
                 )),
           ),
           BottomNavigationBarItem(
             icon: Icon(
-              Icons.blur_on,
-              //color: Colors.pink,
+              FontAwesomeIcons.bookOpen,
             ),
             title: Text(
-              'Actualités',
+              'Carte',
               style: TextStyle(
                 fontSize: 10,
               ),
@@ -53,27 +53,27 @@ class BodyState extends State<Body> {
           ),
           BottomNavigationBarItem(
             icon: new Icon(
-              Icons.home,
+              Icons.stars,
             ),
-            title: new Text('Accueil',
+            title: new Text('Prestation',
                 style: TextStyle(
                   fontSize: 10,
                 )),
           ),
           BottomNavigationBarItem(
             icon: new Icon(
-              Icons.format_list_bulleted,
+              Icons.bookmark,
             ),
-            title: new Text('Services',
+            title: new Text('Reservation',
                 style: TextStyle(
                   fontSize: 10,
                 )),
           ),
           BottomNavigationBarItem(
             icon: new Icon(
-              Icons.work,
+              Icons.near_me,
             ),
-            title: new Text('Packs',
+            title: new Text('Contact',
                 style: TextStyle(
                   fontSize: 10,
                 )),
