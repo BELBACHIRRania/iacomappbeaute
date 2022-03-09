@@ -30,6 +30,7 @@ dependencies:
   shared_preferences:
   font_awesome_flutter:
   carousel_pro: ^1.0.0
+  http:
 
 dev_dependencies:
   flutter_test:

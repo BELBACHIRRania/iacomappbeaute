@@ -182,7 +182,7 @@ class Accueil extends StatelessWidget {
                                           SizedBox(width: 30),
                                           Container(
                                             height: 42,
-                                            child: Text("Manicurie",
+                                            child: Text("Manucure",
                                               style: TextStyle(
                                                   fontSize: 14,
                                                   color: Colors.black,

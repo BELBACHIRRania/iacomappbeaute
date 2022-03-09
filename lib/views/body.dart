@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:iacomappbeaute/views/accueil.dart';
+import 'package:iacomappbeaute/views/carte.dart';
 import 'package:iacomappbeaute/views/testt.dart';
 
 class Body extends StatefulWidget {
@@ -16,7 +17,7 @@ class BodyState extends State<Body> {
 
   final tabs = [
     Accueil(),
-    Accueil(),
+    Carte(),
     Accueil(),
     Accueiltest(),
     Accueiltest(),
