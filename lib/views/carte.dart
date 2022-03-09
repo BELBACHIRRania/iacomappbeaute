@@ -255,7 +255,7 @@ class CarteState extends State<Carte> {
                                   ),
                                   Container(
                                     width: 180,
-                                    child: Text("IACOM Beauty vous propose des soins esthétiques pour vos soins de visage. ",
+                                    child: Text("IACOM Beauty vous propose des soins esthétiques pour vos soins de visage.",
                                       style: TextStyle(
                                         color: Colors.black,
                                         fontSize: 10,),
@@ -332,7 +332,7 @@ class CarteState extends State<Carte> {
                                   ),
                                   Container(
                                     width: 180,
-                                    child: Text("Des moments de bien-être et de détente absolue vous attendent",
+                                    child: Text("Des moments de bien-être et de détente absolue vous attendent.",
                                       style: TextStyle(
                                         color: Colors.black,
                                         fontSize: 10,),
@@ -409,7 +409,7 @@ class CarteState extends State<Carte> {
                                   ),
                                   Container(
                                     width: 180,
-                                    child: Text("Des moments de bien-être et de détente absolue vous attendent",
+                                    child: Text("IACOM Beauty vous invite à une pause beauté inégalée dans son centre de beauté à Biarritz.",
                                       style: TextStyle(
                                         color: Colors.black,
                                         fontSize: 10,),
