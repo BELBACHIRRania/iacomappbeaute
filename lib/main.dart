@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'package:iacomappbeaute/views/accueil.dart';
+import 'package:iacomappbeaute/views/bottomnavigation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 void main() {
@@ -56,7 +56,7 @@ class SplashState extends State<SplashScreen> {
 
   route() {
     Navigator.pushReplacement(
-        context, MaterialPageRoute(builder: (context) => Accueil()));
+        context, MaterialPageRoute(builder: (context) => Body()));
   }
 
   initScreen(BuildContext context) {

@@ -1,13 +1,16 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:iacomappbeaute/views/bottomnavigation.dart';
 import 'package:iacomappbeaute/views/carousel_slider.dart';
 import 'package:iacomappbeaute/views/nav_bar.dart';
+import 'package:iacomappbeaute/views/tabbar.dart';
 
 class Accueil extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         backgroundColor: Color(0xFFDABCB2),
+        //bottomNavigationBar: BottomNav(),
         endDrawer: NavBar(),
         appBar: AppBar(
           iconTheme: IconThemeData(color: Colors.black),
@@ -47,11 +50,11 @@ class Accueil extends StatelessWidget {
                       SizedBox(height: 15),
                       Container(
                         color: Colors.white,
-                        height: 200,
+                        height: 185,
                         width: MediaQuery.of(context).size.width,
                         child: Column(
                           children: [
-                            SizedBox(height: 15),
+                            SizedBox(height: 10),
                             Container(
                               width: 380,
                               child: Text("Nos services",
@@ -61,7 +64,7 @@ class Accueil extends StatelessWidget {
                                     fontFamily: "QueenBold"),
                               ),
                             ),
-                            SizedBox(height: 15),
+                            SizedBox(height: 10),
                             SingleChildScrollView(
                               scrollDirection: Axis.horizontal,
                               child: Container(
@@ -84,10 +87,11 @@ class Accueil extends StatelessWidget {
                                                   shape: BoxShape.circle,
                                                   image: DecorationImage(
                                                     image: AssetImage("assets/images/21.png"),
+                                                      fit: BoxFit.fill
                                                   )
                                               ),
-                                              height: 97,
-                                              width: 100,
+                                              height: 90,
+                                              width: 93,
                                             ),
                                           ),
                                           SizedBox(width: 15),
@@ -103,10 +107,11 @@ class Accueil extends StatelessWidget {
                                               shape: BoxShape.circle,
                                               image: DecorationImage(
                                                 image: AssetImage("assets/images/22.png"),
+                                                  fit: BoxFit.fill
                                               )
                                           ),
-                                          height: 97,
-                                          width: 100,
+                                          height: 90,
+                                          width: 93,
                                         ),
                                       ),
                                           SizedBox(width: 15),
@@ -122,10 +127,11 @@ class Accueil extends StatelessWidget {
                                               shape: BoxShape.circle,
                                               image: DecorationImage(
                                                 image: AssetImage("assets/images/23.png"),
+                                                  fit: BoxFit.fill
                                               )
                                           ),
-                                          height: 97,
-                                          width: 100,
+                                          height: 90,
+                                          width: 93,
                                         ),
                                       ),
                                           SizedBox(width: 15),
@@ -141,10 +147,11 @@ class Accueil extends StatelessWidget {
                                               shape: BoxShape.circle,
                                               image: DecorationImage(
                                                 image: AssetImage("assets/images/24.png"),
+                                                fit: BoxFit.fill
                                               )
                                           ),
-                                          height: 97,
-                                          width: 100,
+                                          height: 90,
+                                          width: 93,
                                         ),
                                       ),
                                           SizedBox(width: 15),
@@ -160,10 +167,11 @@ class Accueil extends StatelessWidget {
                                               shape: BoxShape.circle,
                                               image: DecorationImage(
                                                 image: AssetImage("assets/images/25.png"),
+                                                  fit: BoxFit.fill
                                               )
                                           ),
-                                          height: 97,
-                                          width: 100,
+                                          height: 90,
+                                          width: 93,
                                         ),
                                       ),
                                           SizedBox(width: 15),
@@ -171,30 +179,58 @@ class Accueil extends StatelessWidget {
                                       ),
                                     ),
                                     Positioned(
-                                      top: 100,
+                                      top: 95,
                                       child: Row(
                                         children: [
-                                          SizedBox(width: 35),
+                                          SizedBox(width: 30),
                                           Container(
-                                            child: Text("Manicurie"),
-                                          ),
-                                          SizedBox(width: 50),
-                                          Container(
-                                            child: Text("Epilations"),
-                                          ),
-                                          SizedBox(width: 50),
-                                          Container(
-                                            width: 80,
-                                            child: Text("Soins du visage"),
-                                          ),
-                                          SizedBox(width:35),
-                                          Container(
-                                            width: 80,
-                                            child: Text("Soins du corps"),
+                                            height: 42,
+                                            child: Text("Manicurie",
+                                              style: TextStyle(
+                                                  fontSize: 14,
+                                                  color: Colors.black,
+                                                  fontFamily: "QueenSemiBold"),
+                                            ),
                                           ),
                                           SizedBox(width: 45),
                                           Container(
-                                            child: Text("Beauté"),
+                                            height: 42,
+                                            child: Text("Epilations",
+                                              style: TextStyle(
+                                                  fontSize: 14,
+                                                  color: Colors.black,
+                                                  fontFamily: "QueenSemiBold"),
+                                            ),
+                                          ),
+                                          SizedBox(width: 45),
+                                          Container(
+                                            width: 80,
+                                            child: Text("Soins du visage",
+                                              style: TextStyle(
+                                                  fontSize: 14,
+                                                  color: Colors.black,
+                                                  fontFamily: "QueenSemiBold"),
+                                            ),
+                                          ),
+                                          SizedBox(width:25),
+                                          Container(
+                                            width: 80,
+                                            child: Text("Soins du corps",
+                                              style: TextStyle(
+                                                  fontSize: 14,
+                                                  color: Colors.black,
+                                                  fontFamily: "QueenSemiBold"),
+                                            ),
+                                          ),
+                                          SizedBox(width: 33),
+                                          Container(
+                                            height: 42,
+                                            child: Text("Beauté",
+                                              style: TextStyle(
+                                                  fontSize: 14,
+                                                  color: Colors.black,
+                                                  fontFamily: "QueenSemiBold"),
+                                            ),
                                           ),
                                         ],
                                       ),
@@ -208,8 +244,8 @@ class Accueil extends StatelessWidget {
                       ),
                       SizedBox(height: 15),
                       Container(
-                        height: 400,
-                        width: 500,
+                        height: 335,
+                        width: MediaQuery.of(context).size.width,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(10),
                           color: Colors.white,
@@ -222,7 +258,6 @@ class Accueil extends StatelessWidget {
                             ),
                           ],
                         ),
-                        margin: EdgeInsets.only(left: 30, right: 30),
                         padding:
                             EdgeInsets.only(top: 10, left: 20, right: 20, bottom: 10),
                         child: Text(
