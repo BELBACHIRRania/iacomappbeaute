@@ -31,6 +31,8 @@ dependencies:
   font_awesome_flutter:
   carousel_pro: ^1.0.0
   http:
+  fluttertoast: ^3.0.4
+  email_validator:
 
 dev_dependencies:
   flutter_test:

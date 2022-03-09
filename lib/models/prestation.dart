@@ -1,12 +1,12 @@
 import 'dart:convert';
 
-List<Menus> menusFromJson(String str) =>
-    List<Menus>.from(json.decode(str).map((x) => Menus.fromMap(x)));
+List<Prestation> prestationFromJson(String str) =>
+    List<Prestation>.from(json.decode(str).map((x) => Prestation.fromMap(x)));
 
-String menusToJson(List<Menus> data) =>
+String prestationToJson(List<Prestation> data) =>
     json.encode(List<dynamic>.from(data.map((x) => x.toJson())));
 
-class Menus {
+class Prestation {
   String id_act;
   String nom_art;
   String prix_art;
@@ -14,7 +14,7 @@ class Menus {
   String description;
   String image_art;
 
-  Menus({
+  Prestation({
     this.id_act,
     this.nom_art,
     this.prix_art,
@@ -23,7 +23,7 @@ class Menus {
     this.image_art,
   });
 
-  factory Menus.fromMap(Map<String, dynamic> json) => Menus(
+  factory Prestation.fromMap(Map<String, dynamic> json) => Prestation(
         id_act: json["id_act"],
         nom_art: json["nom_art"],
         prix_art: json["prix_art"],

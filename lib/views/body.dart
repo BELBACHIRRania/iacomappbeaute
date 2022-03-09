@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:iacomappbeaute/views/accueil.dart';
 import 'package:iacomappbeaute/views/carte.dart';
+import 'package:iacomappbeaute/views/prestation_list.dart';
+import 'package:iacomappbeaute/views/reservation.dart';
 import 'package:iacomappbeaute/views/testt.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -33,8 +35,8 @@ class BodyState extends State<Body> {
   final tabs = [
     Accueil(),
     Carte(),
-    Accueil(),
-    Accueiltest(),
+    PrestationList(),
+    Reservation(),
     Accueiltest(),
   ];
 
