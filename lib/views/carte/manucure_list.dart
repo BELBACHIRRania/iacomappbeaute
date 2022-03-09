@@ -172,7 +172,7 @@ class _ManucureListState extends State<ManucureList> {
                     children: <Widget>[
                       CircularProgressIndicator(
                           valueColor: AlwaysStoppedAnimation<Color>(
-                            Color(0xFFFFCC80),
+                            Color(0xFFDABCB2),
                           ),
                           strokeWidth: 5),
                     ],

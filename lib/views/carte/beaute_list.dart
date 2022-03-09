@@ -1,15 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:iacomappbeaute/models/epilation.dart';
-import 'package:iacomappbeaute/services/epilation-api.dart';
-import 'package:iacomappbeaute/services/manucure-api.dart';
+import 'package:iacomappbeaute/models/beaute.dart';
+import 'package:iacomappbeaute/services/beaute-api.dart';
 import 'package:iacomappbeaute/views/nav_bar.dart';
 
-class EpilationList extends StatefulWidget {
+class BeauteList extends StatefulWidget {
   @override
-  _EpilationListState createState() => _EpilationListState();
+  _SoinVListState createState() => _SoinVListState();
 }
 
-class _EpilationListState extends State<EpilationList> {
+class _SoinVListState extends State<BeauteList> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -46,14 +45,14 @@ class _EpilationListState extends State<EpilationList> {
         child: Container(
           height: MediaQuery.of(context).size.height,
           child: FutureBuilder(
-            future: fetchEpilation(),
+            future: fetchBeaute(),
             builder: (context, snapshot) {
               if (snapshot.hasData) {
                 return ListView.builder(
                     itemCount: snapshot.data.length,
                     shrinkWrap: true,
                     itemBuilder: (BuildContext context, index) {
-                      Epilation epilation = snapshot.data[index];
+                      Beaute beaute = snapshot.data[index];
                       return Container(
                         margin: EdgeInsets.only(
                             left: 20, right: 15, top: 5, bottom: 5),
@@ -74,7 +73,7 @@ class _EpilationListState extends State<EpilationList> {
                           children: <Widget>[
                             ClipRRect(
                               child: Image.network(
-                                'http://iacomapp.cest-la-base.fr/${epilation.image_art}',
+                                'http://iacomapp.cest-la-base.fr/${beaute.image_art}',
                                 height: MediaQuery.of(context).size.height / 5,
                                 fit: BoxFit.fill,
                                 width: MediaQuery.of(context).size.width,
@@ -86,7 +85,7 @@ class _EpilationListState extends State<EpilationList> {
                                 left: 35,
                               ),
                               child: Text(
-                                '${epilation.nom_art}',
+                                '${beaute.nom_art}',
                                 style: TextStyle(
                                   fontSize: 15,
                                   color: Colors.black,
@@ -113,7 +112,7 @@ class _EpilationListState extends State<EpilationList> {
                                 Container(
                                   margin: EdgeInsets.only(bottom: 10),
                                   child: Text(
-                                    '${epilation.duree} min',
+                                    '${beaute.duree} min',
                                     style: TextStyle(
                                       fontSize: 13,
                                       color: Colors.black,
@@ -128,7 +127,7 @@ class _EpilationListState extends State<EpilationList> {
                                   margin: EdgeInsets.only(
                                       left: 20, right: 5, bottom: 10),
                                   child: Text(
-                                    '${epilation.prix_art}',
+                                    '${beaute.prix_art}',
                                     style: TextStyle(
                                       fontSize: 15,
                                       color: Colors.black,
@@ -152,7 +151,7 @@ class _EpilationListState extends State<EpilationList> {
                               width: 300,
                               alignment: Alignment.center,
                               child: Text(
-                                '${epilation.description}',
+                                '${beaute.description}',
                                 style: TextStyle(
                                     fontSize: 15,
                                     color: Colors.black,

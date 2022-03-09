@@ -1,7 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:iacomappbeaute/views/carte/beaute_list.dart';
 import 'package:iacomappbeaute/views/carte/epilation_list.dart';
 import 'package:iacomappbeaute/views/carte/manucure_list.dart';
+import 'package:iacomappbeaute/views/carte/soin_corps_list.dart';
 import 'package:iacomappbeaute/views/carte/soin_visage_list.dart';
 import 'package:iacomappbeaute/views/nav_bar.dart';
 
@@ -284,7 +286,7 @@ class CarteState extends State<Carte> {
                       context,
                       MaterialPageRoute(
                         builder: (context) =>
-                            ManucureList(),
+                            SoinCList(),
                       ),
                     );
                   },
@@ -361,7 +363,7 @@ class CarteState extends State<Carte> {
                       context,
                       MaterialPageRoute(
                         builder: (context) =>
-                            ManucureList(),
+                            BeauteList(),
                       ),
                     );
                   },
