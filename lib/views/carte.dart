@@ -27,13 +27,13 @@ class CarteState extends State<Carte> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: <Widget>[
                 SizedBox(
-                  width: 90,
+                  width: 100,
                 ),
                 Container(
                     child: Align(
                         alignment: Alignment.center,
                         child: Text(
-                          "IΛCOM Restaurant",
+                          "IΛCOM Beauty",
                           style: TextStyle(
                               fontSize: 20,
                               color: Colors.black,
@@ -42,86 +42,397 @@ class CarteState extends State<Carte> {
               ],
             ),
           ),
-        body: Column(
-          children: [
-            GestureDetector(
-              onTap: (){
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) =>
-                        DessertsList(),
-                  ),
-                );
-              },
-                child: Stack(
-                  children: [
-                    Container(
-                      decoration: BoxDecoration(
-                        color: Colors.white,
-                        boxShadow: [
-                          BoxShadow(
-                            offset: Offset(2, 2),
-                            blurRadius: 5,
-                            spreadRadius: 1.0,
-                            color:
-                            Color(0xFFB0CCE1).withOpacity(0.32),
-                          ),
-                        ],
+        body: SingleChildScrollView(
+          child: Column(
+            children: [
+              GestureDetector(
+                  onTap: (){
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) =>
+                            DessertsList(),
                       ),
-                      height: 150,
-                      width: 350,
-                      margin: EdgeInsets.only(left: 30, right: 30, top: 30, bottom: 5),
-                      child: Row(
-                        children: [
-                          Container(
-                            color: Color(0xFFCEAA9A),
-                            width: 80,
+                    );
+                  },
+                  child: Stack(
+                    children: [
+                      Container(
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            boxShadow: [
+                              BoxShadow(
+                                offset: Offset(2, 2),
+                                blurRadius: 5,
+                                spreadRadius: 1.0,
+                                color:
+                                Color(0xFFB0CCE1).withOpacity(0.32),
+                              ),
+                            ],
                           ),
-                          SizedBox(
-                            width: 85,
-                          ),
-                          Column(
+                          height: 150,
+                          width: 350,
+                          margin: EdgeInsets.only(left: 30, right: 30, top: 10),
+                          child: Row(
                             children: [
-                              SizedBox(
-                                height: 20,
-                              ),
                               Container(
-                                width: 100,
-                                child: Text("Manucure",
-                                  style: TextStyle(
-                                      color: Colors.black,
-                                      fontSize: 16,
-                                      fontFamily: "QueenBold"),
-                                ),
+                                color: Color(0xFFCEAA9A),
+                                width: 80,
                               ),
                               SizedBox(
-                                height: 10,
+                                width: 80,
                               ),
-                              Container(
-                                width: 180,
-                                child: Text("IACOM Beauty prend soin de vos mains. Un service professionnel de manucure qui maitrise parfaitement la pose complète de gel, la pose de vernis ou de semi-permanent.",
-                                  style: TextStyle(
-                                      color: Colors.black,
-                                      fontSize: 10,),
-                                ),
+                              Column(
+                                children: [
+                                  SizedBox(
+                                    height: 20,
+                                  ),
+                                  Container(
+                                    width: 100,
+                                    child: Text("Manucure",
+                                      style: TextStyle(
+                                          color: Colors.black,
+                                          fontSize: 16,
+                                          fontFamily: "QueenBold"),
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    height: 10,
+                                  ),
+                                  Container(
+                                    width: 180,
+                                    child: Text("IACOM Beauty prend soin de vos mains. Un service professionnel de manucure qui maitrise parfaitement la pose complète de gel, la pose de vernis ou de semi-permanent.",
+                                      style: TextStyle(
+                                        color: Colors.black,
+                                        fontSize: 10,),
+                                    ),
+                                  )
+                                ],
                               )
                             ],
                           )
-                        ],
+                      ),
+                      Positioned(
+                        top: 30,
+                        left: 60,
+                        //right: 170,
+                        bottom: 20,
+                        child: Image.asset('assets/images/21.png'),
                       )
-                    ),
-                    Positioned(
-                      top: 50,
-                      left: 60,
-                      //right: 170,
-                      bottom: 20,
-                      child: Image.asset('assets/images/21.png'),
-                    )
-                  ],
-                )
-            )
-          ],
+                    ],
+                  )
+              ),
+              GestureDetector(
+                  onTap: (){
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) =>
+                            DessertsList(),
+                      ),
+                    );
+                  },
+                  child: Stack(
+                    children: [
+                      Container(
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            boxShadow: [
+                              BoxShadow(
+                                offset: Offset(2, 2),
+                                blurRadius: 5,
+                                spreadRadius: 1.0,
+                                color:
+                                Color(0xFFB0CCE1).withOpacity(0.32),
+                              ),
+                            ],
+                          ),
+                          height: 150,
+                          width: 350,
+                          margin: EdgeInsets.only(left: 30, right: 30, top: 10),
+                          child: Row(
+                            children: [
+                              Container(
+                                color: Color(0xFFCEAA9A),
+                                width: 80,
+                              ),
+                              SizedBox(
+                                width: 80,
+                              ),
+                              Column(
+                                children: [
+                                  SizedBox(
+                                    height: 20,
+                                  ),
+                                  Container(
+                                    width: 100,
+                                    child: Text("Epilation",
+                                      style: TextStyle(
+                                          color: Colors.black,
+                                          fontSize: 16,
+                                          fontFamily: "QueenBold"),
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    height: 10,
+                                  ),
+                                  Container(
+                                    width: 180,
+                                    child: Text("Nous épilons les parties du visage avec le savoir-faire ancestral du fil qui est d’une grande précision. Pour le corps, nous utilisons de la cire de qualité qui respecte votre peau et évite de repasser plusieurs fois sur les mêmes zones.",
+                                      style: TextStyle(
+                                        color: Colors.black,
+                                        fontSize: 10,),
+                                    ),
+                                  )
+                                ],
+                              )
+                            ],
+                          )
+                      ),
+                      Positioned(
+                        top: 30,
+                        left: 60,
+                        //right: 170,
+                        bottom: 20,
+                        child: Image.asset('assets/images/22.png'),
+                      )
+                    ],
+                  )
+              ),
+              GestureDetector(
+                  onTap: (){
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) =>
+                            DessertsList(),
+                      ),
+                    );
+                  },
+                  child: Stack(
+                    children: [
+                      Container(
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            boxShadow: [
+                              BoxShadow(
+                                offset: Offset(2, 2),
+                                blurRadius: 5,
+                                spreadRadius: 1.0,
+                                color:
+                                Color(0xFFB0CCE1).withOpacity(0.32),
+                              ),
+                            ],
+                          ),
+                          height: 150,
+                          width: 350,
+                          margin: EdgeInsets.only(left: 30, right: 30, top: 10),
+                          child: Row(
+                            children: [
+                              Container(
+                                color: Color(0xFFCEAA9A),
+                                width: 80,
+                              ),
+                              SizedBox(
+                                width: 80,
+                              ),
+                              Column(
+                                children: [
+                                  SizedBox(
+                                    height: 20,
+                                  ),
+                                  Container(
+                                    width: 150,
+                                    child: Text("Soins du visage",
+                                      style: TextStyle(
+                                          color: Colors.black,
+                                          fontSize: 16,
+                                          fontFamily: "QueenBold"),
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    height: 10,
+                                  ),
+                                  Container(
+                                    width: 180,
+                                    child: Text("IACOM Beauty vous propose des soins esthétiques pour vos soins de visage. ",
+                                      style: TextStyle(
+                                        color: Colors.black,
+                                        fontSize: 10,),
+                                    ),
+                                  )
+                                ],
+                              )
+                            ],
+                          )
+                      ),
+                      Positioned(
+                        top: 30,
+                        left: 60,
+                        //right: 170,
+                        bottom: 20,
+                        child: Image.asset('assets/images/23.png'),
+                      )
+                    ],
+                  )
+              ),
+              GestureDetector(
+                  onTap: (){
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) =>
+                            DessertsList(),
+                      ),
+                    );
+                  },
+                  child: Stack(
+                    children: [
+                      Container(
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            boxShadow: [
+                              BoxShadow(
+                                offset: Offset(2, 2),
+                                blurRadius: 5,
+                                spreadRadius: 1.0,
+                                color:
+                                Color(0xFFB0CCE1).withOpacity(0.32),
+                              ),
+                            ],
+                          ),
+                          height: 150,
+                          width: 350,
+                          margin: EdgeInsets.only(left: 30, right: 30, top: 10),
+                          child: Row(
+                            children: [
+                              Container(
+                                color: Color(0xFFCEAA9A),
+                                width: 80,
+                              ),
+                              SizedBox(
+                                width: 80,
+                              ),
+                              Column(
+                                children: [
+                                  SizedBox(
+                                    height: 20,
+                                  ),
+                                  Container(
+                                    width: 150,
+                                    child: Text("Soins du corps",
+                                      style: TextStyle(
+                                          color: Colors.black,
+                                          fontSize: 16,
+                                          fontFamily: "QueenBold"),
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    height: 10,
+                                  ),
+                                  Container(
+                                    width: 180,
+                                    child: Text("Des moments de bien-être et de détente absolue vous attendent",
+                                      style: TextStyle(
+                                        color: Colors.black,
+                                        fontSize: 10,),
+                                    ),
+                                  )
+                                ],
+                              )
+                            ],
+                          )
+                      ),
+                      Positioned(
+                        top: 30,
+                        left: 60,
+                        //right: 170,
+                        bottom: 20,
+                        child: Image.asset('assets/images/24.png'),
+                      )
+                    ],
+                  )
+              ),
+              GestureDetector(
+                  onTap: (){
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) =>
+                            DessertsList(),
+                      ),
+                    );
+                  },
+                  child: Stack(
+                    children: [
+                      Container(
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            boxShadow: [
+                              BoxShadow(
+                                offset: Offset(2, 2),
+                                blurRadius: 5,
+                                spreadRadius: 1.0,
+                                color:
+                                Color(0xFFB0CCE1).withOpacity(0.32),
+                              ),
+                            ],
+                          ),
+                          height: 150,
+                          width: 350,
+                          margin: EdgeInsets.only(left: 30, right: 30, top: 10),
+                          child: Row(
+                            children: [
+                              Container(
+                                color: Color(0xFFCEAA9A),
+                                width: 80,
+                              ),
+                              SizedBox(
+                                width: 80,
+                              ),
+                              Column(
+                                children: [
+                                  SizedBox(
+                                    height: 20,
+                                  ),
+                                  Container(
+                                    width: 100,
+                                    child: Text("Beauté",
+                                      style: TextStyle(
+                                          color: Colors.black,
+                                          fontSize: 16,
+                                          fontFamily: "QueenBold"),
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    height: 10,
+                                  ),
+                                  Container(
+                                    width: 180,
+                                    child: Text("Des moments de bien-être et de détente absolue vous attendent",
+                                      style: TextStyle(
+                                        color: Colors.black,
+                                        fontSize: 10,),
+                                    ),
+                                  )
+                                ],
+                              )
+                            ],
+                          )
+                      ),
+                      Positioned(
+                        top: 30,
+                        left: 60,
+                        //right: 170,
+                        bottom: 20,
+                        child: Image.asset('assets/images/25.png'),
+                      )
+                    ],
+                  )
+              ),
+              SizedBox(height: 15,)
+            ],
+          ),
         )
     );
   }
