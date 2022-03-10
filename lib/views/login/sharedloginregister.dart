@@ -1299,7 +1299,9 @@ class _VerifyState extends State<Verify> {
       @required this.email,
       @required this.name,
       @required this.mobile,
-      @required this.password});
+      @required this.password
+      }
+      );
 
   update() async {
     final response = await http
@@ -1345,8 +1347,8 @@ class _VerifyState extends State<Verify> {
         toastLength: Toast.LENGTH_SHORT,
         gravity: ToastGravity.BOTTOM,
         timeInSecForIos: 1,
-        backgroundColor: Color(0xFFFFCC80),
-        textColor: Colors.white);
+        backgroundColor: Color(0xFFDABCB2),
+        textColor: Colors.black);
   }
 
   @override
@@ -1359,7 +1361,7 @@ class _VerifyState extends State<Verify> {
               height: MediaQuery.of(context).size.height,
               decoration: BoxDecoration(
                   gradient: LinearGradient(
-                colors: [Color(0xFFFFCC80), Colors.white],
+                colors: [Color(0xFFDABCB2), Colors.white],
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
               )),
@@ -1397,7 +1399,7 @@ class _VerifyState extends State<Verify> {
                       height: MediaQuery.of(context).size.height / 3,
                     ),
                     Card(
-                      color: Color(0xFFFFCC80),
+                      color: Color(0xFFDABCB2),
                       margin: const EdgeInsets.only(
                           right: 60, left: 60, bottom: 10, top: 10),
                       shape: RoundedRectangleBorder(
