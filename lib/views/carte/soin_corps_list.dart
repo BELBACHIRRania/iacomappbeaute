@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:iacomappbeaute/models/soin_corps.dart';
 import 'package:iacomappbeaute/services/soin_corps-api.dart';
+import 'package:iacomappbeaute/views/body.dart';
 import 'package:iacomappbeaute/views/nav_bar.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class SoinCList extends StatefulWidget {
   @override
@@ -9,6 +11,15 @@ class SoinCList extends StatefulWidget {
 }
 
 class _SoinCListState extends State<SoinCList> {
+  int currentIndex = 0;
+
+  savePref(int currentIndex) async {
+    SharedPreferences preferences = await SharedPreferences.getInstance();
+    setState(() {
+      preferences.setInt("currentIndex", currentIndex);
+      preferences.commit();
+    });
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,19 +35,31 @@ class _SoinCListState extends State<SoinCList> {
           mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
+            IconButton(
+                icon: Icon(Icons.keyboard_backspace),
+                iconSize: 30,
+                color: Colors.black,
+                onPressed: () async{
+                  currentIndex = 1;
+                  await savePref(currentIndex);
+                  Navigator.pushReplacement(
+                    context,
+                    MaterialPageRoute(builder: (context) => Body()),
+                  );
+                }),
             SizedBox(
-              width: 100,
+              width: 80,
             ),
             Container(
-                child: Align(
-                    alignment: Alignment.center,
-                    child: Text(
-                      "IΛCOM Beauty",
-                      style: TextStyle(
-                          fontSize: 20,
-                          color: Colors.black,
-                          fontFamily: "QueenBold"),
-                    ))),
+                margin: EdgeInsets.only(top: 10,),
+                child: Text(
+                  "IΛCOM Beauty",
+                  style: TextStyle(
+                      fontSize: 20,
+                      color: Colors.black,
+                      fontFamily: "QueenBold"),
+                )
+            ),
           ],
         ),
       ),

@@ -185,18 +185,7 @@ class _ReservationState extends State<Reservation> {
                     Container(
                       padding: EdgeInsets.only(left: 10, right: 0, bottom: 5),
                       child: Text(
-                        "RÉSERVEZ VOTRE TABLE AU RESTAURANT",
-                        style: TextStyle(
-                          fontSize: 13.7,
-                          color: Colors.black,
-                          fontFamily: "QueenBold",
-                        ),
-                      ),
-                    ),
-                    Container(
-                      padding: EdgeInsets.only(left: 20, right: 0),
-                      child: Text(
-                        "IΛCOM Restaurant",
+                        "RÉSERVEZ MAINTENANT!",
                         style: TextStyle(
                           fontSize: 13.7,
                           color: Colors.black,

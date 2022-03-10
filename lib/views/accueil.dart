@@ -241,7 +241,7 @@ class Accueil extends StatelessWidget {
                       ),
                       SizedBox(height: 15),
                       Container(
-                        height: 335,
+                        height: 380,
                         width: MediaQuery.of(context).size.width,
                         decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(10),
@@ -258,9 +258,9 @@ class Accueil extends StatelessWidget {
                         padding:
                             EdgeInsets.only(top: 10, left: 20, right: 20, bottom: 10),
                         child: Text(
-                            "IΛCOM Restaurant est un restaurant asiatique situé dans le département de la Gironde, à Bassens. Spécialisés dans la cuisine japonaise et thaïlandaise, nous vous proposons le meilleur Sushi à Bassens\n"
-                            "\nDe la décoration jusqu’à dans l'assiette notre maître mot est le dépaysement. La légendaire zénitude asiatique s’exprime à travers une décoration branchée aux tons neutres, un cadre en osmose avec la musique d’ambiance aux airs chill-out. Fraîcheur et qualité supérieure sont les mots d’ordre côté cuisine. ",
-                            style: TextStyle(
+                            "Le salon IACOM Beauty ous accueille à Biarritz(64), dans le département des Pyrénées-Atlantiques en région Aquitaine.\n"
+                                "\n Votre salon vous propose de nombreuses prestaions pour embellir vos cheuveux. Vous avez la possibilité, sur rendez-vous, de vous détendre lorsque nous vus apportons une touche finale, grâce aux soins esthétiques proposés.\n"
+                                "\n Fort de ses 33 années d'expérience et de sa spécialité en conseil visagisme le salon IACOM Beauty vous apporte l'écoute, le conseil et le savoir-faire.",style: TextStyle(
                                 fontSize: 16,
                                 color: Colors.black,
                                 fontFamily: "QueenSemiBold"),
