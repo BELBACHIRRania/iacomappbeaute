@@ -35,6 +35,12 @@ dependencies:
   email_validator:
   google_maps_flutter:
   url_launcher: ^5.7.2
+  qr_flutter:
+  barcode_scan: ^3.0.1
+  firebase_messaging: ^6.0.13
+  flutter_local_notifications: ^3.0.1+7
+  image_picker: ^0.6.7+7
+  email_auth: ^0.0.1+2
 
 dev_dependencies:
   flutter_test:
