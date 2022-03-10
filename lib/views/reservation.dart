@@ -16,19 +16,14 @@ class Reservation extends StatefulWidget {
 class _ReservationState extends State<Reservation> {
   final _key = new GlobalKey<FormState>();
 
-  List<String> listPersonne = [
-    '1',
-    '2',
-    '3',
-    '4',
-    '5',
-    '6',
-    '7',
-    '8',
-    '9',
-    '10'
+  List<String> type = [
+    'Manucure traditionnelle',
+    'Guinot t Yonka',
+    'Epilation',
+    'Soin et beauté du visage',
+    'Soin anti-rides et aromatiques',
   ]; // Option 2
-  String selectedPersonne;
+  String selectedType;
 
   String nom = "", mail = "", tel = "", detail = "";
 
@@ -42,14 +37,14 @@ class _ReservationState extends State<Reservation> {
 
   submit() async {
     final response = await http
-        .post("http://iacomapp.cest-la-base.fr/reservation.php", body: {
+        .post("http://iacomapp.cest-la-base.fr/reservationBeauty.php", body: {
       "nom": nom,
       "mail": mail,
       "tel": tel,
-      "nb_personne": selectedPersonne,
+      "type": selectedType,
       "info_complementaire": detail,
       "dates_resa": "${DateFormat('yyyy/MM/dd').format(selectedDateResa.toLocal())}".split(' ')[0],
-      "mapp_id": '32',
+      "mapp_id": '28',
       "heure_resa": '${time.hour}:${time.minute}',
     });
     final data = jsonDecode(response.body);
@@ -57,25 +52,25 @@ class _ReservationState extends State<Reservation> {
     String message = data['message'];
     if (value == 1) {
       print(message);
-      editToast(message);
+      ajoutToast(message);
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(builder: (context) => Body()),
       );
     } else {
       print(message);
-      editToast(message);
+      ajoutToast(message);
     }
   }
 
-  editToast(String toast) {
+  ajoutToast(String toast) {
     return Fluttertoast.showToast(
         msg: toast,
         toastLength: Toast.LENGTH_SHORT,
         gravity: ToastGravity.BOTTOM,
         timeInSecForIos: 2,
-        backgroundColor: Color(0xFFFFB74D),
-        textColor: Colors.white);
+        backgroundColor: Color(0xFFDABCB2),
+        textColor: Colors.black);
   }
   /////////////////////////////////////////////////date picker //////////////////////////////////////////////////////////
 
@@ -94,9 +89,9 @@ class _ReservationState extends State<Reservation> {
         builder: (context, child) {
           return Theme(
             data: ThemeData(
-              primaryColor: const Color(0xFFFFCC80),
-              accentColor: const Color(0xFFFFCC80),
-              colorScheme: ColorScheme.light(primary: const Color(0xFFFFCC80),),
+              primaryColor: const Color(0xFFDABCB2),
+              accentColor: const Color(0xFFDABCB2),
+              colorScheme: ColorScheme.light(primary: const Color(0xFFDABCB2),),
               buttonTheme: ButtonThemeData(textTheme: ButtonTextTheme.primary),
             ),
             child: child,
@@ -145,7 +140,7 @@ class _ReservationState extends State<Reservation> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: Color(0xFFDABCB2),
       endDrawer: NavBar(),
       appBar: AppBar(
         iconTheme: IconThemeData(color: Colors.black),
@@ -169,7 +164,9 @@ class _ReservationState extends State<Reservation> {
                           fontSize: 20,
                           color: Colors.black,
                           fontFamily: "QueenBold"),
-                    ))),
+                    )
+                )
+            ),
           ],
         ),
       ),
@@ -211,13 +208,10 @@ class _ReservationState extends State<Reservation> {
                       height: 20,
                     ),
                     Card(
-                      color: Color(0xFFFFCC80),
+                      color: Colors.white,
                       margin: const EdgeInsets.only(
                           right: 60, left: 60, bottom: 10, top: 10),
                       elevation: 6.0,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(15.0),
-                      ),
                       child: TextFormField(
                         onSaved: (e) => nom = e,
                         style: TextStyle(
@@ -241,13 +235,10 @@ class _ReservationState extends State<Reservation> {
                       ),
                     ),
                     Card(
-                      color: Color(0xFFFFCC80),
+                      color: Colors.white,
                       margin: const EdgeInsets.only(
                           right: 60, left: 60, bottom: 10, top: 10),
                       elevation: 6.0,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(15.0),
-                      ),
                       child: TextFormField(
                         keyboardType: TextInputType.emailAddress,
                         validator: (e) {
@@ -279,13 +270,10 @@ class _ReservationState extends State<Reservation> {
                       ),
                     ),
                     Card(
-                      color: Color(0xFFFFCC80),
+                      color: Colors.white,
                       margin: const EdgeInsets.only(
                           right: 60, left: 60, bottom: 10, top: 10),
                       elevation: 6.0,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(15.0),
-                      ),
                       child: TextFormField(
                         keyboardType: TextInputType.number,
                         validator: (e) {
@@ -317,55 +305,49 @@ class _ReservationState extends State<Reservation> {
                       ),
                     ),
                     Card(
-                      color: Color(0xFFFFCC80),
-                      margin: const EdgeInsets.only(
-                          right: 60, left: 60, bottom: 10, top: 10),
+                      color: Colors.white,
+                      margin: const EdgeInsets.only(right: 60, left: 60, bottom: 10, top: 10),
                       elevation: 6.0,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(15.0),
-                      ),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.stretch,
                         children: [
                           Container(
-                              padding:
-                                  EdgeInsets.only(left: 60, top: 11, right: 20),
+                              padding: EdgeInsets.only(left: 20, top: 11, right: 10),
                               child: DropdownButtonHideUnderline(
                                 child: DropdownButton(
-                                  dropdownColor: Color(0xFFFFE0B2),
+                                  dropdownColor: Color(0xFFCEAA9A),
                                   hint: Text(
-                                    'Nombre de personne',
+                                    'Type de prestation',
                                     style: TextStyle(
                                         fontSize: 14,
                                         fontFamily: "Queen",
                                         color: Colors.black,
-                                        fontWeight: FontWeight.w900),
+                                        fontWeight: FontWeight.w900
+                                    ),
                                   ),
-                                  value: selectedPersonne,
+                                  value: selectedType,
                                   onChanged: (newValue) async {
                                     setState(() {
-                                      selectedPersonne = newValue;
+                                      selectedType = newValue;
                                     });
                                   },
-                                  items: listPersonne.map((location) {
+                                  items: type.map((location) {
                                     return DropdownMenuItem(
                                       child: new Text(location),
                                       value: location,
                                     );
                                   }).toList(),
                                 ),
-                              ))
+                              )
+                          )
                         ],
                       ),
                     ),
                     Card(
-                      color: Color(0xFFFFCC80),
+                      color: Colors.white,
                       margin: const EdgeInsets.only(
                           right: 60, left: 60, bottom: 10, top: 10),
                       elevation: 6.0,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(15.0),
-                      ),
                       child: TextFormField(
                         maxLength: 2000,
                         maxLines: null,
@@ -392,13 +374,9 @@ class _ReservationState extends State<Reservation> {
                       ),
                     ),
                     Card(
-                      margin: const EdgeInsets.only(
-                          right: 60, left: 60, bottom: 10, top: 10),
-                      color: Color(0xFFFFCC80),
+                      margin: const EdgeInsets.only(right: 60, left: 60, bottom: 10, top: 10),
+                      color: Colors.white,
                       elevation: 6.0,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(15.0),
-                      ),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.stretch,
                         children: [
@@ -418,8 +396,7 @@ class _ReservationState extends State<Reservation> {
                                         CrossAxisAlignment.start,
                                     children: [
                                       Container(
-                                        margin: const EdgeInsets.only(
-                                            left: 10, bottom: 5, top: 5),
+                                        margin: const EdgeInsets.only(left: 10, bottom: 5, top: 5),
                                         child: Text(
                                           "Date réservation",
                                           style: TextStyle(
@@ -453,13 +430,9 @@ class _ReservationState extends State<Reservation> {
                       ),
                     ),
                     Card(
-                      margin: const EdgeInsets.only(
-                          right: 60, left: 60, bottom: 10, top: 10),
-                      color: Color(0xFFFFCC80),
+                      margin: const EdgeInsets.only(right: 60, left: 60, bottom: 10, top: 10),
+                      color: Colors.white,
                       elevation: 6.0,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(15.0),
-                      ),
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.stretch,
                         children: [
