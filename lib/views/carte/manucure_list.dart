@@ -125,7 +125,7 @@ class _ManucureListState extends State<ManucureList> {
                                   margin: EdgeInsets.only(bottom: 10, left: 30),
                                   child: Icon(
                                     Icons.access_time,
-                                    color: Color(0xFFFFCC80),
+                                    color: Color(0xFFDABCB2),
                                     size: 20,
                                   ),
                                 ),

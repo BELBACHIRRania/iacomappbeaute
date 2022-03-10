@@ -1,7 +1,14 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:iacomappbeaute/models/manucure.dart';
 import 'package:iacomappbeaute/views/carousel_slider.dart';
+import 'package:iacomappbeaute/views/carte/beaute_list.dart';
+import 'package:iacomappbeaute/views/carte/epilation_list.dart';
+import 'package:iacomappbeaute/views/carte/manucure_list.dart';
+import 'package:iacomappbeaute/views/carte/soin_corps_list.dart';
 import 'package:iacomappbeaute/views/nav_bar.dart';
+
+import 'carte/soin_visage_list.dart';
 
 class Accueil extends StatelessWidget {
   @override
@@ -76,7 +83,7 @@ class Accueil extends StatelessWidget {
                                             onTap: () {
                                               Navigator.push(
                                                 context,
-                                                MaterialPageRoute(builder: (context) => Accueil()),
+                                                MaterialPageRoute(builder: (context) => ManucureList()),
                                               );
                                             },
                                             child: Container(
@@ -96,7 +103,7 @@ class Accueil extends StatelessWidget {
                                         onTap: () {
                                           Navigator.push(
                                             context,
-                                            MaterialPageRoute(builder: (context) => Accueil()),
+                                            MaterialPageRoute(builder: (context) => EpilationList()),
                                           );
                                         },
                                         child: Container(
@@ -116,7 +123,7 @@ class Accueil extends StatelessWidget {
                                         onTap: () {
                                           Navigator.push(
                                             context,
-                                            MaterialPageRoute(builder: (context) => Accueil()),
+                                            MaterialPageRoute(builder: (context) => SoinVList()),
                                           );
                                         },
                                         child: Container(
@@ -136,7 +143,7 @@ class Accueil extends StatelessWidget {
                                         onTap: () {
                                           Navigator.push(
                                             context,
-                                            MaterialPageRoute(builder: (context) => Accueil()),
+                                            MaterialPageRoute(builder: (context) => SoinCList()),
                                           );
                                         },
                                         child: Container(
@@ -156,7 +163,7 @@ class Accueil extends StatelessWidget {
                                         onTap: () {
                                           Navigator.push(
                                             context,
-                                            MaterialPageRoute(builder: (context) => Accueil()),
+                                            MaterialPageRoute(builder: (context) => BeauteList()),
                                           );
                                         },
                                         child: Container(
