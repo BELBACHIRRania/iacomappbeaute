@@ -50,10 +50,12 @@ class _PointsState extends State<Points> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.white,
       endDrawer: NavBar(),
       appBar: AppBar(
-        backgroundColor: Color(0xFFFFCC80),
-        elevation: 0,
+        iconTheme: IconThemeData(color: Colors.black),
+        backgroundColor: Colors.white,
+        elevation: 5,
         automaticallyImplyLeading: false,
         title: Row(
           mainAxisSize: MainAxisSize.min,
@@ -63,24 +65,23 @@ class _PointsState extends State<Points> {
             IconButton(
                 icon: Icon(Icons.keyboard_backspace),
                 iconSize: 30,
-                color: Colors.white,
+                color: Colors.black,
                 onPressed: () {
                   Navigator.pop(context);
                 }),
             SizedBox(
-              width: 90,
+              width: 80,
             ),
             Container(
-                margin: EdgeInsets.only(
-                  top: 10,
-                ),
+                margin: EdgeInsets.only(top: 10,),
                 child: Text(
-                  "Mon espace",
+                  "IΛCOM Beauty",
                   style: TextStyle(
                       fontSize: 20,
-                      color: Colors.white,
+                      color: Colors.black,
                       fontFamily: "QueenBold"),
-                )),
+                )
+            ),
           ],
         ),
       ),
@@ -131,7 +132,7 @@ class _PointsState extends State<Points> {
                             topLeft: Radius.circular(20),
                             topRight: Radius.circular(20)),
                         child: Container(
-                          color: Color(0xFFFFB74D),
+                          color: Color(0xFFCEAA9A),
                           height: 200,
                           width: 250,
                           child: Align(
@@ -145,7 +146,7 @@ class _PointsState extends State<Points> {
                                   topLeft: Radius.circular(20),
                                   topRight: Radius.circular(20)),
                               child: Container(
-                                  color: Color(0xFFFFCC80),
+                                  color: Color(0xFFDABCB2),
                                   height: 150,
                                   width: 200,
                                   child: Center(

@@ -88,8 +88,8 @@ class _ModifierPasswordState extends State<ModifierPassword> {
         toastLength: Toast.LENGTH_SHORT,
         gravity: ToastGravity.BOTTOM,
         timeInSecForIos: 1,
-        backgroundColor: Color(0xFFFFCC80),
-        textColor: Colors.white);
+        backgroundColor: Color(0xFFDABCB2),
+        textColor: Colors.black);
   }
 
   getPref() async {
@@ -120,10 +120,12 @@ class _ModifierPasswordState extends State<ModifierPassword> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color(0xFFDABCB2),
       endDrawer: NavBar(),
       appBar: AppBar(
-        backgroundColor: Color(0xFFFFCC80),
-        elevation: 0,
+        iconTheme: IconThemeData(color: Colors.black),
+        backgroundColor: Colors.white,
+        elevation: 5,
         automaticallyImplyLeading: false,
         title: Row(
           mainAxisSize: MainAxisSize.min,
@@ -133,24 +135,23 @@ class _ModifierPasswordState extends State<ModifierPassword> {
             IconButton(
                 icon: Icon(Icons.keyboard_backspace),
                 iconSize: 30,
-                color: Colors.white,
+                color: Colors.black,
                 onPressed: () {
                   Navigator.pop(context);
                 }),
             SizedBox(
-              width: 90,
+              width: 80,
             ),
             Container(
-                margin: EdgeInsets.only(
-                  top: 10,
-                ),
+                margin: EdgeInsets.only(top: 10,),
                 child: Text(
-                  "Mon espace",
+                  "IΛCOM Beauty",
                   style: TextStyle(
                       fontSize: 20,
-                      color: Colors.white,
+                      color: Colors.black,
                       fontFamily: "QueenBold"),
-                )),
+                )
+            ),
           ],
         ),
       ),
@@ -167,7 +168,7 @@ class _ModifierPasswordState extends State<ModifierPassword> {
                       height: MediaQuery.of(context).size.height / 4,
                     ),
                     Card(
-                      color: Color(0xFFFFCC80),
+                      color: Colors.white,
                       margin: const EdgeInsets.only(
                           right: 60, left: 60, bottom: 10, top: 10),
                       shape: RoundedRectangleBorder(
@@ -214,7 +215,7 @@ class _ModifierPasswordState extends State<ModifierPassword> {
                       ),
                     ),
                     Card(
-                      color: Color(0xFFFFCC80),
+                      color: Colors.white,
                       margin: const EdgeInsets.only(
                           right: 60, left: 60, bottom: 10, top: 10),
                       shape: RoundedRectangleBorder(
@@ -262,7 +263,7 @@ class _ModifierPasswordState extends State<ModifierPassword> {
                       ),
                     ),
                     Card(
-                      color: Color(0xFFFFCC80),
+                      color: Colors.white,
                       margin: const EdgeInsets.only(
                           right: 60, left: 60, bottom: 10, top: 10),
                       shape: RoundedRectangleBorder(
@@ -328,7 +329,7 @@ class _ModifierPasswordState extends State<ModifierPassword> {
                                 fontWeight: FontWeight.w900),
                           ),
                           textColor: Colors.black,
-                          color: Colors.white,
+                          color: Color(0xFFCEAA9A),
                           onPressed: () async {
                             check();
                             await savePref(password);

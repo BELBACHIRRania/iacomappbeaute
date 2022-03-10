@@ -50,7 +50,6 @@ class _LoginState extends State<Login> {
       "password": password,
       "fcm_token": "test_fcm_token",
     });
-
     final data = jsonDecode(response.body);
     int value = data['value'];
     String message = data['message'];
@@ -81,8 +80,8 @@ class _LoginState extends State<Login> {
         toastLength: Toast.LENGTH_SHORT,
         gravity: ToastGravity.BOTTOM,
         timeInSecForIos: 1,
-        backgroundColor: Color(0xFFFFCC80),
-        textColor: Colors.white);
+        backgroundColor: Color(0xFFDABCB2),
+        textColor: Colors.black);
   }
 
   savePref(int value, String email, String name, String password, String mobile,
@@ -147,7 +146,7 @@ class _LoginState extends State<Login> {
                   height: MediaQuery.of(context).size.height,
                   decoration: BoxDecoration(
                       gradient: LinearGradient(
-                    colors: [Color(0xFFFFCC80), Colors.white],
+                    colors: [Color(0xFFDABCB2), Colors.white],
                     begin: Alignment.topLeft,
                     end: Alignment.bottomRight,
                   )),
@@ -186,7 +185,7 @@ class _LoginState extends State<Login> {
                           height: 150,
                         ),
                         Card(
-                          color: Color(0xFFFFCC80),
+                          color: Color(0xFFDABCB2),
                           margin: const EdgeInsets.only(
                               right: 60, left: 60, bottom: 10, top: 10),
                           shape: RoundedRectangleBorder(
@@ -224,7 +223,7 @@ class _LoginState extends State<Login> {
                           ),
                         ),
                         Card(
-                          color: Color(0xFFFFCC80),
+                          color: Color(0xFFDABCB2),
                           margin: const EdgeInsets.only(
                               right: 60, left: 60, bottom: 10, top: 10),
                           elevation: 6.0,
@@ -350,7 +349,7 @@ class _LoginState extends State<Login> {
                                     style: TextStyle(
                                         fontSize: 14,
                                         fontFamily: "Queen",
-                                        color: Color(0xFFFFB74D),
+                                        color: Color(0xFFCEAA9A),
                                         fontWeight: FontWeight.w900),
                                   ),
                                   color: Colors.transparent,
@@ -435,8 +434,8 @@ class _RegisterState extends State<Register> {
         toastLength: Toast.LENGTH_SHORT,
         gravity: ToastGravity.BOTTOM,
         timeInSecForIos: 1,
-        backgroundColor: Color(0xFFFFCC80),
-        textColor: Colors.white);
+        backgroundColor: Color(0xFFDABCB2),
+        textColor: Colors.black);
   }
 
   void sendOTP() async {
@@ -465,8 +464,8 @@ class _RegisterState extends State<Register> {
         toastLength: Toast.LENGTH_SHORT,
         gravity: ToastGravity.BOTTOM,
         timeInSecForIos: 1,
-        backgroundColor: Color(0xFFFFCC80),
-        textColor: Colors.white);
+        backgroundColor: Color(0xFFDABCB2),
+        textColor: Colors.black);
   }
 
   check() {
@@ -487,7 +486,7 @@ class _RegisterState extends State<Register> {
               height: MediaQuery.of(context).size.height,
               decoration: BoxDecoration(
                   gradient: LinearGradient(
-                colors: [Color(0xFFFFCC80), Colors.white],
+                colors: [Color(0xFFDABCB2), Colors.white],
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
               )),
@@ -525,7 +524,7 @@ class _RegisterState extends State<Register> {
                       height: 100,
                     ),
                     Card(
-                      color: Color(0xFFFFCC80),
+                      color: Color(0xFFDABCB2),
                       margin: const EdgeInsets.only(
                           right: 60, left: 60, bottom: 10, top: 10),
                       shape: RoundedRectangleBorder(
@@ -559,7 +558,7 @@ class _RegisterState extends State<Register> {
                       ),
                     ),
                     Card(
-                      color: Color(0xFFFFCC80),
+                      color: Color(0xFFDABCB2),
                       margin: const EdgeInsets.only(
                           right: 60, left: 60, bottom: 10, top: 10),
                       shape: RoundedRectangleBorder(
@@ -597,7 +596,7 @@ class _RegisterState extends State<Register> {
                       ),
                     ),
                     Card(
-                      color: Color(0xFFFFCC80),
+                      color: Color(0xFFDABCB2),
                       margin: const EdgeInsets.only(
                           right: 60, left: 60, bottom: 10, top: 10),
                       shape: RoundedRectangleBorder(
@@ -635,7 +634,7 @@ class _RegisterState extends State<Register> {
                       ),
                     ),
                     Card(
-                      color: Color(0xFFFFCC80),
+                      color: Color(0xFFDABCB2),
                       margin: const EdgeInsets.only(
                           right: 60, left: 60, bottom: 10, top: 10),
                       shape: RoundedRectangleBorder(
@@ -741,7 +740,7 @@ class _RegisterState extends State<Register> {
                                 style: TextStyle(
                                     fontSize: 14,
                                     fontFamily: "Queen",
-                                    color: Color(0xFFFFB74D),
+                                    color: Color(0xFFCEAA9A),
                                     fontWeight: FontWeight.w900),
                               ),
                               color: Colors.transparent,
@@ -876,10 +875,12 @@ class _MainMenuState extends State<MainMenu> {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        backgroundColor: Color(0xFFDABCB2),
         endDrawer: NavBar(),
         appBar: AppBar(
-          backgroundColor: Color(0xFFFFCC80),
-          elevation: 0,
+          iconTheme: IconThemeData(color: Colors.black),
+          backgroundColor: Colors.white,
+          elevation: 5,
           automaticallyImplyLeading: false,
           title: Row(
             mainAxisSize: MainAxisSize.min,
@@ -889,27 +890,26 @@ class _MainMenuState extends State<MainMenu> {
               IconButton(
                   icon: Icon(Icons.keyboard_backspace),
                   iconSize: 30,
-                  color: Colors.white,
+                  color: Colors.black,
                   onPressed: () {
-                    Navigator.push(
+                    Navigator.pushReplacement(
                       context,
                       MaterialPageRoute(builder: (context) => Body()),
                     );
                   }),
               SizedBox(
-                width: 90,
+                width: 85,
               ),
               Container(
-                  margin: EdgeInsets.only(
-                    top: 10,
-                  ),
+                  margin: EdgeInsets.only(top: 10,),
                   child: Text(
                     "Mon espace",
                     style: TextStyle(
                         fontSize: 20,
-                        color: Colors.white,
+                        color: Colors.black,
                         fontFamily: "QueenBold"),
-                  )),
+                  )
+              ),
             ],
           ),
         ),
@@ -962,7 +962,7 @@ class _MainMenuState extends State<MainMenu> {
                                   ),
                                 ]),
                             textColor: Colors.black,
-                            color: Color(0xFFFFCC80),
+                            color: Colors.white,
                             onPressed: () {
                               Navigator.push(
                                 context,
@@ -998,7 +998,7 @@ class _MainMenuState extends State<MainMenu> {
                                   ),
                                 ]),
                             textColor: Colors.black,
-                            color: Color(0xFFFFCC80),
+                            color: Colors.white,
                             onPressed: () {
                               print(password);
                               Navigator.push(
@@ -1043,7 +1043,7 @@ class _MainMenuState extends State<MainMenu> {
                                       ),
                                     ]),
                                 textColor: Colors.black,
-                                color: Color(0xFFFFCC80),
+                                color: Colors.white,
                                 onPressed: () async {
                                   await point();
                                   await savePref(email, name, password, mobile,
@@ -1089,7 +1089,7 @@ class _MainMenuState extends State<MainMenu> {
                                       ),
                                     ]),
                                 textColor: Colors.black,
-                                color: Color(0xFFFFCC80),
+                                color: Colors.white,
                                 onPressed: () {
                                   showDialog(
                                       context: context,
@@ -1209,7 +1209,7 @@ class _MainMenuState extends State<MainMenu> {
                                       ),
                                     ]),
                                 textColor: Colors.black,
-                                color: Color(0xFFFFCC80),
+                                color: Colors.white,
                                 onPressed: () {
                                   Navigator.push(
                                       context,
@@ -1253,7 +1253,7 @@ class _MainMenuState extends State<MainMenu> {
                                   ),
                                 ]),
                             textColor: Colors.black,
-                            color: Color(0xFFFFCC80),
+                            color: Colors.white,
                             onPressed: () {
                               signOut();
                             }),

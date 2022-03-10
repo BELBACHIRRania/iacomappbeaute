@@ -48,8 +48,8 @@ class _ScanQRSupprimerState extends State<ScanQRSupprimer> {
         toastLength: Toast.LENGTH_SHORT,
         gravity: ToastGravity.BOTTOM,
         timeInSecForIos: 1,
-        backgroundColor: Color(0xFFFFCC80),
-        textColor: Colors.white);
+        backgroundColor: Color(0xFFDABCB2),
+        textColor: Colors.black);
   }
 
   submit() async {
@@ -93,7 +93,7 @@ class _ScanQRSupprimerState extends State<ScanQRSupprimer> {
           height: MediaQuery.of(context).size.height,
           decoration: BoxDecoration(
               gradient: LinearGradient(
-            colors: [Color(0xFFFFCC80), Colors.white],
+            colors: [Color(0xFFDABCB2), Colors.white],
             begin: Alignment.topLeft,
             end: Alignment.bottomRight,
           )),

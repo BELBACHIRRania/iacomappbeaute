@@ -84,7 +84,7 @@ class PlanAccesState extends State<PlanAcces>
             SizedBox(width: 10.0),
             Padding(
               padding: const EdgeInsets.all(8.0),
-              child: _boxes(48.8011630, 2.3249030, "IΛCOM Restaurant"),
+              child: _boxes(48.8011630, 2.3249030, "IΛCOM Beauty"),
             ),
           ],
         ),

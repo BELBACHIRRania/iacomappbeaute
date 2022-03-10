@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:iacomappbeaute/views/body.dart';
 import 'package:iacomappbeaute/views/login/modifier_profil.dart';
 import 'package:iacomappbeaute/views/login/sharedloginregister.dart';
 import 'package:iacomappbeaute/views/nav_bar.dart';
@@ -60,10 +61,12 @@ class _InfosPersoState extends State<InfosPerso> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color(0xFFDABCB2),
       endDrawer: NavBar(),
       appBar: AppBar(
-        backgroundColor: Color(0xFFFFCC80),
-        elevation: 0,
+        iconTheme: IconThemeData(color: Colors.black),
+        backgroundColor: Colors.white,
+        elevation: 5,
         automaticallyImplyLeading: false,
         title: Row(
           mainAxisSize: MainAxisSize.min,
@@ -73,29 +76,26 @@ class _InfosPersoState extends State<InfosPerso> {
             IconButton(
                 icon: Icon(Icons.keyboard_backspace),
                 iconSize: 30,
-                color: Colors.white,
+                color: Colors.black,
                 onPressed: () {
-                  Navigator.push(
+                  Navigator.pushReplacement(
                     context,
-                    MaterialPageRoute(
-                        builder: (context) => MainMenu(signOut, id_user, name,
-                            email, mobile, password, status, points)),
+                    MaterialPageRoute(builder: (context) => Body()),
                   );
                 }),
             SizedBox(
-              width: 90,
+              width: 80,
             ),
             Container(
-                margin: EdgeInsets.only(
-                  top: 10,
-                ),
+                margin: EdgeInsets.only(top: 10,),
                 child: Text(
-                  "Mon espace",
+                  "IΛCOM Beauty",
                   style: TextStyle(
                       fontSize: 20,
-                      color: Colors.white,
+                      color: Colors.black,
                       fontFamily: "QueenBold"),
-                )),
+                )
+            ),
           ],
         ),
       ),

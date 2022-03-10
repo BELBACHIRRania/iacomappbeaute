@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:iacomappbeaute/views/actualite_list.dart';
 import 'package:iacomappbeaute/views/body.dart';
+import 'package:iacomappbeaute/views/login/sharedloginregister.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class NavBar extends StatefulWidget {
@@ -52,10 +53,10 @@ class NavBarState extends State<NavBar> {
               currentIndex = 0;
               await savePref(currentIndex);
               Navigator.pop(context);
-              // Navigator.push(
-              //   context,
-              //   MaterialPageRoute(builder: (context) => Login()),
-              // );
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => Login()),
+              );
             },
           ),
           ListTile(
