@@ -96,56 +96,6 @@ class _PrestationListState extends State<PrestationList> {
                             SizedBox(
                               height: 10,
                             ),
-                            // Row(
-                            //   children: [
-                            //     Container(
-                            //       margin: EdgeInsets.only(bottom: 10, left: 30),
-                            //       child: Icon(
-                            //         Icons.access_time,
-                            //         color: Color(0xFFFFCC80),
-                            //         size: 20,
-                            //       ),
-                            //     ),
-                            //     SizedBox(
-                            //       width: 5,
-                            //     ),
-                            //     Container(
-                            //       margin: EdgeInsets.only(bottom: 10),
-                            //       child: Text(
-                            //         '${prestation.duree} min',
-                            //         style: TextStyle(
-                            //           fontSize: 13,
-                            //           color: Colors.black,
-                            //           fontWeight: FontWeight.w100,
-                            //         ),
-                            //       ),
-                            //     ),
-                            //     SizedBox(
-                            //       width: 160,
-                            //     ),
-                            //     Container(
-                            //       margin: EdgeInsets.only(
-                            //           left: 20, right: 5, bottom: 10),
-                            //       child: Text(
-                            //         '${prestation.prix_art}',
-                            //         style: TextStyle(
-                            //           fontSize: 15,
-                            //           color: Colors.black,
-                            //           fontWeight: FontWeight.w100,
-                            //         ),
-                            //       ),
-                            //     ),
-                            //     Container(
-                            //       child: Text(
-                            //         '€',
-                            //         style: TextStyle(
-                            //             fontSize: 15,
-                            //             color: Colors.black,
-                            //             fontFamily: "Queen"),
-                            //       ),
-                            //     ),
-                            //   ],
-                            // ),
                             Container(
                               margin: EdgeInsets.only(left: 30),
                               width: 300,
