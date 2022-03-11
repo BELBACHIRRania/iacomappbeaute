@@ -51,7 +51,7 @@ class CarteState extends State<Carte> {
             children: [
               GestureDetector(
                   onTap: (){
-                    Navigator.pushReplacement(
+                    Navigator.push(
                       context,
                       MaterialPageRoute(
                         builder: (context) =>
@@ -128,7 +128,7 @@ class CarteState extends State<Carte> {
               ),
               GestureDetector(
                   onTap: (){
-                    Navigator.pushReplacement(
+                    Navigator.push(
                       context,
                       MaterialPageRoute(
                         builder: (context) =>
@@ -205,7 +205,7 @@ class CarteState extends State<Carte> {
               ),
               GestureDetector(
                   onTap: (){
-                    Navigator.pushReplacement(
+                    Navigator.push(
                       context,
                       MaterialPageRoute(
                         builder: (context) =>
@@ -282,7 +282,7 @@ class CarteState extends State<Carte> {
               ),
               GestureDetector(
                   onTap: (){
-                    Navigator.pushReplacement(
+                    Navigator.push(
                       context,
                       MaterialPageRoute(
                         builder: (context) =>
@@ -359,7 +359,7 @@ class CarteState extends State<Carte> {
               ),
               GestureDetector(
                   onTap: (){
-                    Navigator.pushReplacement(
+                    Navigator.push(
                       context,
                       MaterialPageRoute(
                         builder: (context) =>

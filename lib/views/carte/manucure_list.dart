@@ -39,13 +39,8 @@ class _ManucureListState extends State<ManucureList> {
                 icon: Icon(Icons.keyboard_backspace),
                 iconSize: 30,
                 color: Colors.black,
-                onPressed: () async{
-                  currentIndex = 1;
-                  await savePref(currentIndex);
-                  Navigator.pushReplacement(
-                    context,
-                    MaterialPageRoute(builder: (context) => Body()),
-                  );
+                onPressed: () {
+                  Navigator.pop(context);
                 }),
             SizedBox(
               width: 80,
