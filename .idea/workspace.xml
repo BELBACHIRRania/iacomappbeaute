@@ -2,17 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca408285-7e87-4f4c-bafc-f4f5494ee86c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/android/iacomappbeaute_android.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/app/src/main/java/io/flutter/plugins/GeneratedPluginRegistrant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +68,7 @@
       <updated>1646727034909</updated>
       <workItem from="1646727050139" duration="69803000" />
       <workItem from="1646984282527" duration="9038000" />
-      <workItem from="1646995624350" duration="7649000" />
+      <workItem from="1646995624350" duration="8026000" />
     </task>
     <task id="LOCAL-00001" summary="commit1">
       <created>1646751753072</created>
@@ -240,7 +231,35 @@
       <option name="project" value="LOCAL" />
       <updated>1647011642069</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="commit1">
+      <created>1647011923317</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1647011923317</updated>
+    </task>
+    <task id="LOCAL-00025" summary="commit1">
+      <created>1647011974381</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1647011974381</updated>
+    </task>
+    <task id="LOCAL-00026" summary="commit1">
+      <created>1647012003898</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1647012003898</updated>
+    </task>
+    <task id="LOCAL-00027" summary="commit1">
+      <created>1647012082787</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1647012082787</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -255,10 +274,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="109" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1646904679310" />
-    <state x="270" y="0" key="CommitChangelistDialog2" timestamp="1647012023171">
+    <state x="270" y="0" key="CommitChangelistDialog2" timestamp="1647012081762">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="270" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1647012023171" />
+    <state x="270" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1647012081762" />
     <state x="463" y="117" key="FileChooserDialogImpl" timestamp="1646840146044">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -291,10 +310,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1646815233948" />
-    <state x="395" y="70" key="Vcs.Push.Dialog.v2" timestamp="1647011664042">
+    <state x="395" y="70" key="Vcs.Push.Dialog.v2" timestamp="1647012130491">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="395" y="70" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1647011664042" />
+    <state x="395" y="70" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1647012130491" />
     <state x="378" y="186" key="com.intellij.ide.util.TipDialog" timestamp="1646984299840">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
