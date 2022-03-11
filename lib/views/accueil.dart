@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:iacomappbeaute/models/manucure.dart';
 import 'package:iacomappbeaute/views/carousel_slider.dart';
 import 'package:iacomappbeaute/views/carte/beaute_list.dart';
 import 'package:iacomappbeaute/views/carte/epilation_list.dart';

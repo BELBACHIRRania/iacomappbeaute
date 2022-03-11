@@ -20,6 +20,7 @@ class _SoinVListState extends State<SoinVList> {
       preferences.commit();
     });
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -46,15 +47,16 @@ class _SoinVListState extends State<SoinVList> {
               width: 80,
             ),
             Container(
-                margin: EdgeInsets.only(top: 10,),
+                margin: EdgeInsets.only(
+                  top: 10,
+                ),
                 child: Text(
                   "IΛCOM Beauty",
                   style: TextStyle(
                       fontSize: 20,
                       color: Colors.black,
                       fontFamily: "QueenBold"),
-                )
-            ),
+                )),
           ],
         ),
       ),
@@ -71,115 +73,128 @@ class _SoinVListState extends State<SoinVList> {
                     shrinkWrap: true,
                     itemBuilder: (BuildContext context, index) {
                       SoinV soinV = snapshot.data[index];
-                      return Container(
-                        margin: EdgeInsets.only(
-                            left: 20, right: 15, top: 5, bottom: 5),
-                        decoration: BoxDecoration(
-                          color: Colors.white,
-                          boxShadow: [
-                            BoxShadow(
-                              offset: Offset(2, 2),
-                              blurRadius: 5,
-                              spreadRadius: 1.0,
-                              color: Color(0xFFB0CCE1).withOpacity(0.32),
-                            ),
-                          ],
-                        ),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          mainAxisAlignment: MainAxisAlignment.start,
-                          children: <Widget>[
-                            ClipRRect(
-                              child: Image.network(
-                                'http://iacomapp.cest-la-base.fr/${soinV.image_art}',
-                                height: MediaQuery.of(context).size.height / 5,
-                                fit: BoxFit.fill,
-                                width: MediaQuery.of(context).size.width,
+                      return GestureDetector(
+                          onTap: () async {
+                            currentIndex = 3;
+                            await savePref(currentIndex);
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => Body(),
                               ),
-                            ),
-                            SizedBox(height: 5),
-                            Container(
-                              margin: EdgeInsets.only(
-                                left: 35,
-                              ),
-                              child: Text(
-                                '${soinV.nom_art}',
-                                style: TextStyle(
-                                  fontSize: 15,
-                                  color: Colors.black,
-                                  fontFamily: "QueenSemiBold",
+                            );
+                          },
+                          child: Container(
+                            margin: EdgeInsets.only(
+                                left: 20, right: 15, top: 5, bottom: 5),
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              boxShadow: [
+                                BoxShadow(
+                                  offset: Offset(2, 2),
+                                  blurRadius: 5,
+                                  spreadRadius: 1.0,
+                                  color: Color(0xFFB0CCE1).withOpacity(0.32),
                                 ),
-                              ),
+                              ],
                             ),
-                            SizedBox(
-                              height: 10,
-                            ),
-                            Row(
-                              children: [
-                                Container(
-                                  margin: EdgeInsets.only(bottom: 10, left: 30),
-                                  child: Icon(
-                                    Icons.access_time,
-                                    color: Color(0xFFDABCB2),
-                                    size: 20,
+                            child: Column(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              mainAxisAlignment: MainAxisAlignment.start,
+                              children: <Widget>[
+                                ClipRRect(
+                                  child: Image.network(
+                                    'http://iacomapp.cest-la-base.fr/${soinV.image_art}',
+                                    height:
+                                        MediaQuery.of(context).size.height / 5,
+                                    fit: BoxFit.fill,
+                                    width: MediaQuery.of(context).size.width,
                                   ),
                                 ),
-                                SizedBox(
-                                  width: 5,
-                                ),
-                                Container(
-                                  margin: EdgeInsets.only(bottom: 10),
-                                  child: Text(
-                                    '${soinV.duree} min',
-                                    style: TextStyle(
-                                      fontSize: 13,
-                                      color: Colors.black,
-                                      fontWeight: FontWeight.w100,
-                                    ),
-                                  ),
-                                ),
-                                SizedBox(
-                                  width: 160,
-                                ),
+                                SizedBox(height: 5),
                                 Container(
                                   margin: EdgeInsets.only(
-                                      left: 20, right: 5, bottom: 10),
+                                    left: 35,
+                                  ),
                                   child: Text(
-                                    '${soinV.prix_art}',
+                                    '${soinV.nom_art}',
                                     style: TextStyle(
                                       fontSize: 15,
                                       color: Colors.black,
-                                      fontWeight: FontWeight.w100,
+                                      fontFamily: "QueenSemiBold",
                                     ),
                                   ),
                                 ),
+                                SizedBox(
+                                  height: 10,
+                                ),
+                                Row(
+                                  children: [
+                                    Container(
+                                      margin:
+                                          EdgeInsets.only(bottom: 10, left: 30),
+                                      child: Icon(
+                                        Icons.access_time,
+                                        color: Color(0xFFDABCB2),
+                                        size: 20,
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 5,
+                                    ),
+                                    Container(
+                                      margin: EdgeInsets.only(bottom: 10),
+                                      child: Text(
+                                        '${soinV.duree} min',
+                                        style: TextStyle(
+                                          fontSize: 13,
+                                          color: Colors.black,
+                                          fontWeight: FontWeight.w100,
+                                        ),
+                                      ),
+                                    ),
+                                    SizedBox(
+                                      width: 160,
+                                    ),
+                                    Container(
+                                      margin: EdgeInsets.only(
+                                          left: 20, right: 5, bottom: 10),
+                                      child: Text(
+                                        '${soinV.prix_art}',
+                                        style: TextStyle(
+                                          fontSize: 15,
+                                          color: Colors.black,
+                                          fontWeight: FontWeight.w100,
+                                        ),
+                                      ),
+                                    ),
+                                    Container(
+                                      child: Text(
+                                        '€',
+                                        style: TextStyle(
+                                            fontSize: 15,
+                                            color: Colors.black,
+                                            fontFamily: "Queen"),
+                                      ),
+                                    ),
+                                  ],
+                                ),
                                 Container(
+                                  margin: EdgeInsets.only(left: 30),
+                                  width: 300,
+                                  alignment: Alignment.center,
                                   child: Text(
-                                    '€',
+                                    '${soinV.description}',
                                     style: TextStyle(
                                         fontSize: 15,
                                         color: Colors.black,
                                         fontFamily: "Queen"),
                                   ),
                                 ),
+                                SizedBox(height: 10),
                               ],
                             ),
-                            Container(
-                              margin: EdgeInsets.only(left: 30),
-                              width: 300,
-                              alignment: Alignment.center,
-                              child: Text(
-                                '${soinV.description}',
-                                style: TextStyle(
-                                    fontSize: 15,
-                                    color: Colors.black,
-                                    fontFamily: "Queen"),
-                              ),
-                            ),
-                            SizedBox(height: 10),
-                          ],
-                        ),
-                      );
+                          ));
                     });
               }
               return SizedBox(

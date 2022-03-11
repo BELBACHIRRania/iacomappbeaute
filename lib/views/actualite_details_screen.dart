@@ -1,7 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:iacomappbeaute/models/actualite.dart';
-import 'package:iacomappbeaute/views/actualite_list.dart';
 import 'package:iacomappbeaute/views/nav_bar.dart';
 import 'package:url_launcher/url_launcher.dart';
 
