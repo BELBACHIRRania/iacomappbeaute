@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ca408285-7e87-4f4c-bafc-f4f5494ee86c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Dart_SDK.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Flutter_Plugins.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/android/iacomappbeaute_android.iml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dart File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="265x1cujhoR8oYvUyxu6pYIJbo0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="dart.analysis.tool.window.force.activate" value="false" />
+    <property name="io.flutter.reload.alreadyRun" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/android" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Hp\Desktop\iacombeaute\iacomappbeaute\android" />
+      <recent name="C:\Users\Hp\Desktop\iacombeaute\iacomappbeaute\assets\images" />
+      <recent name="C:\Users\Hp\Desktop\iacombeaute\iacomappbeaute\android\app\src\main\kotlin\com\iacom\iacomappbeaute" />
+      <recent name="C:\Users\Hp\Desktop\iacombeaute\iacomappbeaute\ios\Runner\Assets.xcassets" />
+      <recent name="C:\Users\Hp\Desktop\iacombeaute\iacomappbeaute\android\app\src\main\res" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="main.dart" type="FlutterRunConfigurationType" factoryName="Flutter">
+      <option name="filePath" value="$PROJECT_DIR$/lib/main.dart" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ca408285-7e87-4f4c-bafc-f4f5494ee86c" name="Default Changelist" comment="" />
+      <created>1646727034909</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1646727034909</updated>
+      <workItem from="1646727050139" duration="69803000" />
+      <workItem from="1646984282527" duration="9038000" />
+      <workItem from="1646995624350" duration="7649000" />
+    </task>
+    <task id="LOCAL-00001" summary="commit1">
+      <created>1646751753072</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1646751753072</updated>
+    </task>
+    <task id="LOCAL-00002" summary="commit1">
+      <created>1646756588039</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1646756588039</updated>
+    </task>
+    <task id="LOCAL-00003" summary="commit1">
+      <created>1646758069042</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1646758069042</updated>
+    </task>
+    <task id="LOCAL-00004" summary="commit1">
+      <created>1646815806228</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1646815806228</updated>
+    </task>
+    <task id="LOCAL-00005" summary="commit1">
+      <created>1646820643507</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1646820643507</updated>
+    </task>
+    <task id="LOCAL-00006" summary="commit1">
+      <created>1646825202943</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1646825202943</updated>
+    </task>
+    <task id="LOCAL-00007" summary="commit1">
+      <created>1646826322345</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1646826322346</updated>
+    </task>
+    <task id="LOCAL-00008" summary="commit1">
+      <created>1646829627072</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1646829627072</updated>
+    </task>
+    <task id="LOCAL-00009" summary="commit1">
+      <created>1646840040600</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1646840040600</updated>
+    </task>
+    <task id="LOCAL-00010" summary="commit1">
+      <created>1646841442095</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1646841442095</updated>
+    </task>
+    <task id="LOCAL-00011" summary="commit1">
+      <created>1646844098313</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1646844098313</updated>
+    </task>
+    <task id="LOCAL-00012" summary="commit1">
+      <created>1646904716511</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1646904716511</updated>
+    </task>
+    <task id="LOCAL-00013" summary="commit1">
+      <created>1646908499356</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1646908499356</updated>
+    </task>
+    <task id="LOCAL-00014" summary="commit1">
+      <created>1646911240685</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1646911240685</updated>
+    </task>
+    <task id="LOCAL-00015" summary="commit1">
+      <created>1646912474808</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1646912474808</updated>
+    </task>
+    <task id="LOCAL-00016" summary="commit1">
+      <created>1646924527164</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1646924527165</updated>
+    </task>
+    <task id="LOCAL-00017" summary="commit1">
+      <created>1646925116308</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1646925116308</updated>
+    </task>
+    <task id="LOCAL-00018" summary="commit1">
+      <created>1646926444761</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1646926444762</updated>
+    </task>
+    <task id="LOCAL-00019" summary="commit1">
+      <created>1646989589267</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1646989589267</updated>
+    </task>
+    <task id="LOCAL-00020" summary="commit1">
+      <created>1647008503820</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1647008503820</updated>
+    </task>
+    <task id="LOCAL-00021" summary="commit1">
+      <created>1647011193536</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1647011193536</updated>
+    </task>
+    <task id="LOCAL-00022" summary="commit1">
+      <created>1647011481370</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1647011481370</updated>
+    </task>
+    <task id="LOCAL-00023" summary="commit1">
+      <created>1647011642069</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1647011642069</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="commit1" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="413" y="109" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1646904679310">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="413" y="109" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1646904679310" />
+    <state x="270" y="0" key="CommitChangelistDialog2" timestamp="1647011640274">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="270" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1647011640274" />
+    <state x="463" y="117" key="FileChooserDialogImpl" timestamp="1646840146044">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="117" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1646840146044" />
+    <state x="543" y="256" key="Github.ShareDialog" timestamp="1646743926176">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="543" y="256" key="Github.ShareDialog/0.0.1366.728@0.0.1366.728" timestamp="1646743926176" />
+    <state x="417" y="68" key="Github.UntrackedFilesDialog" timestamp="1646743954530">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="417" y="68" key="Github.UntrackedFilesDialog/0.0.1366.728@0.0.1366.728" timestamp="1646743954530" />
+    <state width="1322" height="179" key="GridCell.Tab.0.bottom" timestamp="1647010417622">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="179" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1647010417622" />
+    <state width="1322" height="179" key="GridCell.Tab.0.center" timestamp="1647010417622">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="179" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1647010417622" />
+    <state width="1322" height="179" key="GridCell.Tab.0.left" timestamp="1647010417622">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="179" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1647010417622" />
+    <state width="1322" height="179" key="GridCell.Tab.0.right" timestamp="1647010417622">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="1322" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1647010417622" />
+    <state width="498" height="446" key="SwitcherDM" timestamp="1646815233948">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state width="498" height="446" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1646815233948" />
+    <state x="395" y="70" key="Vcs.Push.Dialog.v2" timestamp="1647011664042">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="395" y="70" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1647011664042" />
+    <state x="378" y="186" key="com.intellij.ide.util.TipDialog" timestamp="1646984299840">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="378" y="186" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1646984299840" />
+  </component>
+</project>
