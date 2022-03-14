@@ -275,7 +275,7 @@ class CarteState extends State<Carte> {
                         left: 60,
                         //right: 170,
                         bottom: 20,
-                        child: Image.asset('assets/images/23.png'),
+                        child: Image.asset('assets/images/23.png',fit: BoxFit.fill,width: 115,),
                       )
                     ],
                   )

@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:iacomappbeaute/models/prestation.dart';
 import 'package:iacomappbeaute/services/prestation-api.dart';
+import 'package:iacomappbeaute/views/body.dart';
 import 'package:iacomappbeaute/views/nav_bar.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class PrestationList extends StatefulWidget {
   @override
@@ -9,6 +11,15 @@ class PrestationList extends StatefulWidget {
 }
 
 class _PrestationListState extends State<PrestationList> {
+  int currentIndex = 0;
+
+  savePref(int currentIndex) async {
+    SharedPreferences preferences = await SharedPreferences.getInstance();
+    setState(() {
+      preferences.setInt("currentIndex", currentIndex);
+      preferences.commit();
+    });
+  }
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -53,7 +64,18 @@ class _PrestationListState extends State<PrestationList> {
                     shrinkWrap: true,
                     itemBuilder: (BuildContext context, index) {
                       Prestation prestation = snapshot.data[index];
-                      return Container(
+                      return GestureDetector(
+                          onTap: () async {
+                            currentIndex = 3;
+                            await savePref(currentIndex);
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => Body(),
+                              ),
+                            );
+                          },
+                          child: Container(
                         margin: EdgeInsets.only(
                             left: 20, right: 15, top: 5, bottom: 5),
                         decoration: BoxDecoration(
@@ -111,6 +133,7 @@ class _PrestationListState extends State<PrestationList> {
                             SizedBox(height: 10),
                           ],
                         ),
+                      )
                       );
                     });
               }
