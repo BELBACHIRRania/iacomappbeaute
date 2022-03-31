@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:iacomappbeaute/models/prestation.dart';
+import 'package:iacomappbeaute/models/article.dart';
 import 'package:iacomappbeaute/services/prestation-api.dart';
 import 'package:iacomappbeaute/views/body.dart';
 import 'package:iacomappbeaute/views/nav_bar.dart';
@@ -56,14 +56,14 @@ class _PrestationListState extends State<PrestationList> {
         child: Container(
           height: MediaQuery.of(context).size.height,
           child: FutureBuilder(
-            future: fetchPrestation(),
+            future: fetchArticle(),
             builder: (context, snapshot) {
               if (snapshot.hasData) {
                 return ListView.builder(
                     itemCount: snapshot.data.length,
                     shrinkWrap: true,
                     itemBuilder: (BuildContext context, index) {
-                      Prestation prestation = snapshot.data[index];
+                      Article prestation = snapshot.data[index];
                       return GestureDetector(
                           onTap: () async {
                             currentIndex = 3;

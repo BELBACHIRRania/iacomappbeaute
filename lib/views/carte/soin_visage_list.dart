@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:iacomappbeaute/models/soin_visage.dart';
+import 'package:iacomappbeaute/models/article.dart';
 import 'package:iacomappbeaute/services/soin_visage-api.dart';
 import 'package:iacomappbeaute/views/body.dart';
 import 'package:iacomappbeaute/views/nav_bar.dart';
@@ -65,14 +65,14 @@ class _SoinVListState extends State<SoinVList> {
         child: Container(
           height: MediaQuery.of(context).size.height,
           child: FutureBuilder(
-            future: fetchSoinV(),
+            future: fetchArticle(),
             builder: (context, snapshot) {
               if (snapshot.hasData) {
                 return ListView.builder(
                     itemCount: snapshot.data.length,
                     shrinkWrap: true,
                     itemBuilder: (BuildContext context, index) {
-                      SoinV soinV = snapshot.data[index];
+                      Article soinV = snapshot.data[index];
                       return GestureDetector(
                           onTap: () async {
                             currentIndex = 3;

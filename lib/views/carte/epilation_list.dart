@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:iacomappbeaute/models/epilation.dart';
+import 'package:iacomappbeaute/models/article.dart';
 import 'package:iacomappbeaute/services/epilation-api.dart';
 import 'package:iacomappbeaute/views/body.dart';
 import 'package:iacomappbeaute/views/nav_bar.dart';
@@ -65,14 +65,14 @@ class _EpilationListState extends State<EpilationList> {
         child: Container(
           height: MediaQuery.of(context).size.height,
           child: FutureBuilder(
-            future: fetchEpilation(),
+            future: fetchArticle(),
             builder: (context, snapshot) {
               if (snapshot.hasData) {
                 return ListView.builder(
                     itemCount: snapshot.data.length,
                     shrinkWrap: true,
                     itemBuilder: (BuildContext context, index) {
-                      Epilation epilation = snapshot.data[index];
+                      Article epilation = snapshot.data[index];
                       return GestureDetector(
                         onTap: () async {
                           currentIndex = 3;

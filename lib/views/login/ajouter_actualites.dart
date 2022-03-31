@@ -2,7 +2,6 @@ import 'dart:convert';
 import 'dart:io';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_local_notifications/flutter_local_notifications.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:http/http.dart' as http;
 import 'package:iacomappbeaute/views/body.dart';
@@ -43,11 +42,6 @@ class _AjouterActualitesState extends State<AjouterActualites> {
 
   String fileName;
 
-  getTokenz() async {
-    String token = await _firebaseMessaging.getToken();
-    print(token);
-  }
-
   FirebaseMessaging _firebaseMessaging = FirebaseMessaging();
   String token1;
 
@@ -80,7 +74,7 @@ class _AjouterActualitesState extends State<AjouterActualites> {
 
   submit(String fileName) async {
     final response = await http.post(
-        "http://iacomapp.cest-la-base.fr/ajouter_actualite_restau.php",
+        "http://iacomapp.cest-la-base.fr/ajouter_actualite_iacom.php",
         body: {
           "id": id,
           "titre": titre,
@@ -88,7 +82,7 @@ class _AjouterActualitesState extends State<AjouterActualites> {
           "morelink": morelink,
           "moreTextlink": moreTextlink,
           "actif": actif,
-          "id_app": "18",
+          "id_app": "38",
           "showInWebsite": showInWebsite,
           "image_act": base64Image,
           "name": fileName,
@@ -102,7 +96,7 @@ class _AjouterActualitesState extends State<AjouterActualites> {
       actToast(message);
       if (selectedRadio == 1) {
         getQue();
-        subscribeToTopic('notify');
+        subscribeToTopic('beauty');
         Navigator.push(
             context, MaterialPageRoute(builder: (context) => Body()));
       }
@@ -128,18 +122,8 @@ class _AjouterActualitesState extends State<AjouterActualites> {
     firebaseCloudMessaging_Listeners();
     selectedRadio = 1;
     pubsite = 1;
-    subscribeToTopic('notify');
-    var initializationSettingsAndroid =
-        AndroidInitializationSettings('@mipmap/ic_launcher');
-
-    var initializationSettings =
-        InitializationSettings(android: initializationSettingsAndroid);
-    // flutterLocalNotificationsPlugin.initialize(initializationSettings,
-    //     onSelectNotification: selectNotification);
-    //super.initState();
-
+    subscribeToTopic('beauty');
     _firebaseMessaging.configure(
-      //onBackgroundMessage: myBackgroundHandler,
       onMessage: (Map<String, dynamic> message) async {
         print("onMessage: $message");
         showDialog(
@@ -160,13 +144,11 @@ class _AjouterActualitesState extends State<AjouterActualites> {
             });
       },
     );
-
     firebaseCloudMessaging_Listeners();
   }
 
   void firebaseCloudMessaging_Listeners() {
     _firebaseMessaging.getToken().then((token) {
-      print("Token is " + token);
       setState(() {
         token1 = token;
       });
@@ -177,7 +159,7 @@ class _AjouterActualitesState extends State<AjouterActualites> {
     if (token1 != null) {
       print("hey");
       var response = await http
-          .post("http://iacomapp.cest-la-base.fr/notification.php", body: {
+          .post("http://iacomapp.cest-la-base.fr/notif_iacombeauty.php", body: {
         "token": token1,
         "title": titre,
         "body": description,

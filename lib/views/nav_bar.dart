@@ -40,7 +40,7 @@ class NavBarState extends State<NavBar> {
             ),
           ),
           ListTile(
-            leading: Icon(Icons.bookmark, color: Colors.black87),
+            leading: Icon(Icons.person, color: Colors.black87),
             title: Text(
               'Mon espace',
               style: TextStyle(

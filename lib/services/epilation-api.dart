@@ -1,8 +1,8 @@
 import 'package:http/http.dart' as http;
-import 'package:iacomappbeaute/models/epilation.dart';
+import 'package:iacomappbeaute/models/article.dart';
 
-Future<List<Epilation>> fetchEpilation() async {
+Future<List<Article>> fetchArticle() async {
   String url = "http://iacomapp.cest-la-base.fr/epilation.php";
   final response = await http.get(url);
-  return epilationFromJson(response.body);
+  return articleFromJson(response.body);
 }

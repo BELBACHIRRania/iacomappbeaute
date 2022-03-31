@@ -6,6 +6,7 @@ import 'package:iacomappbeaute/views/contact.dart';
 import 'package:iacomappbeaute/views/prestation_list.dart';
 import 'package:iacomappbeaute/views/reservation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+import 'package:firebase_messaging/firebase_messaging.dart';
 
 class Body extends StatefulWidget {
   @override
@@ -16,7 +17,9 @@ class Body extends StatefulWidget {
 
 class BodyState extends State<Body> {
 
-  int currentIndex = 0;
+  FirebaseMessaging _firebaseMessaging = FirebaseMessaging();
+  String token1;
+  int currentIndex;
 
   getPref() async {
     SharedPreferences preferences = await SharedPreferences.getInstance();
@@ -26,10 +29,46 @@ class BodyState extends State<Body> {
     });
   }
 
+  void firebaseCloudMessaging_Listeners() {
+    _firebaseMessaging.getToken().then((token) {
+      setState(() {
+        token1 = token;
+      });
+    });
+  }
+
+  subscribeToTopic(String topic) async {
+    await _firebaseMessaging.subscribeToTopic(topic);
+  }
+
   @override
   void initState() {
     super.initState();
     getPref();
+    subscribeToTopic('beauty');
+    _firebaseMessaging.configure(
+      onMessage: (Map<String, dynamic> message) async {
+        print("onMessage: $message");
+        showDialog(
+            context: context,
+            builder: (context) {
+              return AlertDialog(
+                title: Text('${message['notification']['title']}'),
+                content: Text(
+                    '${message['notification']['body']}'),
+                actions: <Widget>[
+                  FlatButton(
+                    child: Text('Ok'),
+                    onPressed: () {
+                      Navigator.of(context).pop();
+                    },
+                  ),
+                ],
+              );
+            });
+      },
+    );
+    firebaseCloudMessaging_Listeners();
   }
 
   final tabs = [

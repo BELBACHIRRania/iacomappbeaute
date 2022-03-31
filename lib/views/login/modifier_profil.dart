@@ -26,11 +26,7 @@ class _ModifierProfilState extends State<ModifierProfil> {
       points = "";
   final _key = new GlobalKey<FormState>();
 
-  TextEditingController txtname,
-      txtmobile,
-      txtpassword,
-      txtnewpassword,
-      txtconfirmnewpassword;
+  TextEditingController txtname, txtmobile;
 
   signOut() {
     setState(() {
@@ -41,17 +37,6 @@ class _ModifierProfilState extends State<ModifierProfil> {
   setup() {
     txtname = TextEditingController(text: widget.name);
     txtmobile = TextEditingController(text: widget.mobile);
-    txtpassword = TextEditingController();
-    txtnewpassword = TextEditingController();
-    txtconfirmnewpassword = TextEditingController();
-  }
-
-  bool _secureText = true;
-
-  showHide() {
-    setState(() {
-      _secureText = !_secureText;
-    });
   }
 
   check() {
@@ -68,7 +53,6 @@ class _ModifierProfilState extends State<ModifierProfil> {
       "id_user": widget.id_user,
       "name": name,
       "mobile": mobile,
-      "password": password,
     });
 
     final data = jsonDecode(response.body);
@@ -115,12 +99,11 @@ class _ModifierProfilState extends State<ModifierProfil> {
     setup();
   }
 
-  savePref(String name, String mobile, String password) async {
+  savePref(String name, String mobile) async {
     SharedPreferences preferences = await SharedPreferences.getInstance();
     setState(() {
       preferences.setString("name", name);
       preferences.setString("mobile", mobile);
-      preferences.setString("password", password);
       preferences.commit();
     });
   }
@@ -265,7 +248,7 @@ class _ModifierProfilState extends State<ModifierProfil> {
                           color: Color(0xFFCEAA9A),
                           onPressed: () {
                             check();
-                            savePref(name, mobile, password);
+                            savePref(name, mobile);
                           }),
                     ),
                   ],

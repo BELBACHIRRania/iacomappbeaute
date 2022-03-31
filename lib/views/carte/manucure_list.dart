@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:iacomappbeaute/models/manucure.dart';
+import 'package:iacomappbeaute/models/article.dart';
 import 'package:iacomappbeaute/services/manucure-api.dart';
 import 'package:iacomappbeaute/views/body.dart';
 import 'package:iacomappbeaute/views/nav_bar.dart';
-import 'package:iacomappbeaute/views/reservation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class ManucureList extends StatefulWidget {
@@ -66,14 +65,14 @@ class _ManucureListState extends State<ManucureList> {
         child: Container(
           height: MediaQuery.of(context).size.height,
           child: FutureBuilder(
-            future: fetchManucure(),
+            future: fetchArticle(),
             builder: (context, snapshot) {
               if (snapshot.hasData) {
                 return ListView.builder(
                     itemCount: snapshot.data.length,
                     shrinkWrap: true,
                     itemBuilder: (BuildContext context, index) {
-                      Manucure manucure = snapshot.data[index];
+                      Article manucure = snapshot.data[index];
                       return GestureDetector(
                         onTap: () async {
                           currentIndex = 3;

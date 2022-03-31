@@ -6,7 +6,6 @@ import 'package:iacomappbeaute/views/carte/epilation_list.dart';
 import 'package:iacomappbeaute/views/carte/manucure_list.dart';
 import 'package:iacomappbeaute/views/carte/soin_corps_list.dart';
 import 'package:iacomappbeaute/views/nav_bar.dart';
-
 import 'carte/soin_visage_list.dart';
 
 class Accueil extends StatelessWidget {
@@ -264,7 +263,7 @@ class Accueil extends StatelessWidget {
                         padding:
                             EdgeInsets.only(top: 10, left: 20, right: 20, bottom: 10),
                         child: Text(
-                            "Le salon IACOM Beauty ous accueille à Biarritz(64), dans le département des Pyrénées-Atlantiques en région Aquitaine.\n"
+                            "Le salon IACOM Beauty vous accueille à Biarritz(64), dans le département des Pyrénées-Atlantiques en région Aquitaine.\n"
                                 "\n Votre salon vous propose de nombreuses prestaions pour embellir vos cheuveux. Vous avez la possibilité, sur rendez-vous, de vous détendre lorsque nous vus apportons une touche finale, grâce aux soins esthétiques proposés.\n"
                                 "\n Fort de ses 33 années d'expérience et de sa spécialité en conseil visagisme le salon IACOM Beauty vous apporte l'écoute, le conseil et le savoir-faire.",style: TextStyle(
                                 fontSize: 16,

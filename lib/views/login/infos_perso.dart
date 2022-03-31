@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:iacomappbeaute/views/body.dart';
 import 'package:iacomappbeaute/views/login/modifier_profil.dart';
+import 'package:iacomappbeaute/views/login/sharedloginregister.dart';
 import 'package:iacomappbeaute/views/nav_bar.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:qr_flutter/qr_flutter.dart';
@@ -79,7 +80,8 @@ class _InfosPersoState extends State<InfosPerso> {
                 onPressed: () {
                   Navigator.pushReplacement(
                     context,
-                    MaterialPageRoute(builder: (context) => Body()),
+                    MaterialPageRoute(builder: (context) => MainMenu(signOut, id_user, name, email,
+                        mobile, password, status, points)),
                   );
                 }),
             SizedBox(

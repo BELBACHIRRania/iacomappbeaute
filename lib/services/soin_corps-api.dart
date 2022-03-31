@@ -1,8 +1,8 @@
 import 'package:http/http.dart' as http;
-import 'package:iacomappbeaute/models/soin_corps.dart';
+import 'package:iacomappbeaute/models/article.dart';
 
-Future<List<SoinC>> fetchSoinC() async {
+Future<List<Article>> fetchArticle() async {
   String url = "http://iacomapp.cest-la-base.fr/soinC.php";
   final response = await http.get(url);
-  return soinCFromJson(response.body);
+  return articleFromJson(response.body);
 }

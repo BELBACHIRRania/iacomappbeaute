@@ -1,8 +1,8 @@
 import 'package:http/http.dart' as http;
-import 'package:iacomappbeaute/models/prestation.dart';
+import 'package:iacomappbeaute/models/article.dart';
 
-Future<List<Prestation>> fetchPrestation() async {
+Future<List<Article>> fetchArticle() async {
   String url = "http://iacomapp.cest-la-base.fr/prestation.php";
   final response = await http.get(url);
-  return prestationFromJson(response.body);
+  return articleFromJson(response.body);
 }

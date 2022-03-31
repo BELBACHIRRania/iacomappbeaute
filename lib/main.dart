@@ -2,7 +2,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:iacomappbeaute/views/body.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';import 'package:firebase_messaging/firebase_messaging.dart';
 
 void main() {
   runApp(MyApp());
@@ -36,6 +36,9 @@ class SplashScreen extends StatefulWidget {
 }
 
 class SplashState extends State<SplashScreen> {
+
+  FirebaseMessaging _firebaseMessaging = FirebaseMessaging();
+  String token1;
   int currentIndex = 0;
 
   savePref(int currentIndex) async {
@@ -46,11 +49,49 @@ class SplashState extends State<SplashScreen> {
     });
   }
 
+  void firebaseCloudMessaging_Listeners() {
+    _firebaseMessaging.getToken().then((token) {
+      print("Token is " + token);
+      setState(() {
+        token1 = token;
+      });
+    });
+  }
+
+  subscribeToTopic(String topic) async {
+    await _firebaseMessaging.subscribeToTopic(topic);
+  }
+
   @override
   void initState() {
     super.initState();
     startTime();
+    //
     savePref(currentIndex);
+    subscribeToTopic('beauty');
+    _firebaseMessaging.configure(
+      onMessage: (Map<String, dynamic> message) async {
+        print("onMessage: $message");
+        showDialog(
+            context: context,
+            builder: (context) {
+              return AlertDialog(
+                title: Text('${message['notification']['title']}'),
+                content: Text(
+                    '${message['notification']['body']}'),
+                actions: <Widget>[
+                  FlatButton(
+                    child: Text('Ok'),
+                    onPressed: () {
+                      Navigator.of(context).pop();
+                    },
+                  ),
+                ],
+              );
+            });
+      },
+    );
+    firebaseCloudMessaging_Listeners();
   }
 
   @override
@@ -66,6 +107,7 @@ class SplashState extends State<SplashScreen> {
   }
 
   route() {
+    //
     Navigator.pushReplacement(
         context, MaterialPageRoute(builder: (context) => Body()));
   }

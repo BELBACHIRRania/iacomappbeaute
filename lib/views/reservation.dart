@@ -53,6 +53,8 @@ class _ReservationState extends State<Reservation> {
     if (value == 1) {
       print(message);
       ajoutToast(message);
+      sendMailAdmin();
+      sendMailClient();
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(builder: (context) => Body()),
@@ -72,6 +74,26 @@ class _ReservationState extends State<Reservation> {
         backgroundColor: Color(0xFFDABCB2),
         textColor: Colors.black);
   }
+
+  //Send Mail Admin
+  Future sendMailAdmin() async {
+    var response = await http.post("http://iacomapp.cest-la-base.fr/send_mail_admin.php", body: {
+      "msg": "Réservation au nom de $nom.\nAdresse mail: $mail.\nNuméro de téléphone: $tel."
+          "\nType de prestation: $selectedType.\nLe: ${DateFormat('yyyy/MM/dd').format(selectedDateResa.toLocal())}. A: ${time.hour}:${time.minute}."
+          "\nDétails: $detail",
+    });
+    return json.decode(response.body);
+  }
+
+  //Send Mail Client
+  Future sendMailClient() async {
+    var response = await http.post("http://iacomapp.cest-la-base.fr/send_mail_client.php", body: {
+      "msg": "Votre réservation a bien été prise en compte pour le ${DateFormat('yyyy/MM/dd').format(selectedDateResa.toLocal())}.\nA ${time.hour}:${time.minute}.",
+      "mail": mail,
+    });
+    return json.decode(response.body);
+  }
+
   /////////////////////////////////////////////////date picker //////////////////////////////////////////////////////////
 
   List<DateTime> datesResa;
