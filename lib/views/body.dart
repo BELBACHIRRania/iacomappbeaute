@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:iacomappbeaute/views/accueil.dart';
+import 'package:iacomappbeaute/views/actualite_list.dart';
 import 'package:iacomappbeaute/views/carte.dart';
 import 'package:iacomappbeaute/views/contact.dart';
 import 'package:iacomappbeaute/views/prestation_list.dart';
@@ -47,6 +48,13 @@ class BodyState extends State<Body> {
     getPref();
     subscribeToTopic('beauty');
     _firebaseMessaging.configure(
+      onResume: (Map<String, dynamic> message) {
+        print("I am hereonResume");
+        print(message);
+        Navigator.push(context,
+            MaterialPageRoute(builder: (_) => ActualiteScreen())
+        );
+      },
       onMessage: (Map<String, dynamic> message) async {
         print("onMessage: $message");
         showDialog(

@@ -1,56 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ca408285-7e87-4f4c-bafc-f4f5494ee86c" name="Default Changelist" comment="commit1">
-      <change afterPath="$PROJECT_DIR$/lib/models/article.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/models/reservations.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/services/reservations-api.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/views/login/reservations_list.dart" afterDir="false" />
+    <list default="true" id="ca408285-7e87-4f4c-bafc-f4f5494ee86c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/.flutter-plugins-dependencies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.packages" beforeDir="false" afterPath="$PROJECT_DIR$/.packages" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/.gradle/5.6.2/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/5.6.2/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/.gradle/5.6.2/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/5.6.2/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.gradle/5.6.2/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/5.6.2/fileContent/fileContent.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/.gradle/5.6.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/5.6.2/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/.gradle/5.6.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/5.6.2/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/.gradle/5.6.2/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/5.6.2/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/android/.gradle/5.6.2/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/5.6.2/javaCompile/classAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/.gradle/5.6.2/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/5.6.2/javaCompile/jarAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/.gradle/5.6.2/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/5.6.2/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/.gradle/5.6.2/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/5.6.2/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/android/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/android/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/android/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/android/local.properties" beforeDir="false" afterPath="$PROJECT_DIR$/android/local.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/models/beaute.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/models/epilation.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/models/manucure.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/models/prestation.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/models/soin_corps.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/models/soin_visage.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/services/beaute-api.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/services/beaute-api.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/services/epilation-api.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/services/epilation-api.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/services/manucure-api.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/services/manucure-api.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/services/prestation-api.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/services/prestation-api.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/services/soin_corps-api.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/services/soin_corps-api.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/services/soin_visage-api.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/services/soin_visage-api.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/views/accueil.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/views/accueil.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/views/body.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/views/body.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/views/carte/beaute_list.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/views/carte/beaute_list.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/views/carte/epilation_list.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/views/carte/epilation_list.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/views/carte/manucure_list.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/views/carte/manucure_list.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/views/carte/soin_corps_list.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/views/carte/soin_corps_list.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/views/carte/soin_visage_list.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/views/carte/soin_visage_list.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/views/login/ajouter_actualites.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/views/login/ajouter_actualites.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/views/login/infos_perso.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/views/login/infos_perso.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/views/login/modifier_password.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/views/login/modifier_password.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/views/login/modifier_profil.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/views/login/modifier_profil.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/views/login/points.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/views/login/points.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/views/login/sharedloginregister.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/views/login/sharedloginregister.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/views/nav_bar.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/views/nav_bar.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/views/prestation_list.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/views/prestation_list.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/views/reservation.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/views/reservation.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,7 +87,8 @@
       <workItem from="1646995624350" duration="8877000" />
       <workItem from="1647244726458" duration="4323000" />
       <workItem from="1648626512578" duration="16909000" />
-      <workItem from="1648653205520" duration="20384000" />
+      <workItem from="1648653205520" duration="24982000" />
+      <workItem from="1649063066273" duration="2042000" />
     </task>
     <task id="LOCAL-00001" summary="commit1">
       <created>1646751753072</created>
@@ -323,7 +293,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647250318906</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="commit1">
+      <created>1648725533805</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1648725533805</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -338,10 +315,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="413" y="109" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1366.728@0.0.1366.728" timestamp="1646904679310" />
-    <state x="270" y="0" key="CommitChangelistDialog2" timestamp="1648676057590">
+    <state x="270" y="0" key="CommitChangelistDialog2" timestamp="1648725510559">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="270" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1648676057590" />
+    <state x="270" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1648725510559" />
     <state x="463" y="117" key="FileChooserDialogImpl" timestamp="1646840146044">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -354,30 +331,30 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="417" y="68" key="Github.UntrackedFilesDialog/0.0.1366.728@0.0.1366.728" timestamp="1646743954530" />
-    <state width="1322" height="167" key="GridCell.Tab.0.bottom" timestamp="1648723820319">
+    <state width="623" height="167" key="GridCell.Tab.0.bottom" timestamp="1649063745816">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="167" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1648723820319" />
-    <state width="1322" height="167" key="GridCell.Tab.0.center" timestamp="1648723820319">
+    <state width="623" height="167" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1649063745816" />
+    <state width="623" height="167" key="GridCell.Tab.0.center" timestamp="1649063745816">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="167" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1648723820319" />
-    <state width="1322" height="167" key="GridCell.Tab.0.left" timestamp="1648723820319">
+    <state width="623" height="167" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1649063745816" />
+    <state width="623" height="167" key="GridCell.Tab.0.left" timestamp="1649063745816">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="167" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1648723820318" />
-    <state width="1322" height="167" key="GridCell.Tab.0.right" timestamp="1648723820319">
+    <state width="623" height="167" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1649063745816" />
+    <state width="623" height="167" key="GridCell.Tab.0.right" timestamp="1649063745816">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1322" height="167" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1648723820319" />
+    <state width="623" height="167" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1649063745816" />
     <state width="498" height="446" key="SwitcherDM" timestamp="1646815233948">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="498" height="446" key="SwitcherDM/0.0.1366.728@0.0.1366.728" timestamp="1646815233948" />
-    <state x="395" y="70" key="Vcs.Push.Dialog.v2" timestamp="1647250640040">
+    <state x="395" y="70" key="Vcs.Push.Dialog.v2" timestamp="1648725557221">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="395" y="70" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1647250640040" />
+    <state x="395" y="70" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1648725557221" />
     <state x="92" y="92" width="1182" height="544" key="com.android.tools.idea.avdmanager.AvdListDialog" timestamp="1648646459075">
       <screen x="0" y="0" width="1366" height="728" />
     </state>

@@ -4,6 +4,7 @@ import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:http/http.dart' as http;
+import 'package:iacomappbeaute/views/actualite_list.dart';
 import 'package:iacomappbeaute/views/body.dart';
 import 'package:image_picker/image_picker.dart';
 
@@ -124,6 +125,13 @@ class _AjouterActualitesState extends State<AjouterActualites> {
     pubsite = 1;
     subscribeToTopic('beauty');
     _firebaseMessaging.configure(
+      onResume: (Map<String, dynamic> message) {
+        print("I am hereonResume");
+        print(message);
+        Navigator.push(context,
+            MaterialPageRoute(builder: (_) => ActualiteScreen())
+        );
+      },
       onMessage: (Map<String, dynamic> message) async {
         print("onMessage: $message");
         showDialog(

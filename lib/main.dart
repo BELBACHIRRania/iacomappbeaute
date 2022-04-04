@@ -1,5 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:iacomappbeaute/views/actualite_list.dart';
 import 'package:iacomappbeaute/views/body.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';import 'package:firebase_messaging/firebase_messaging.dart';
@@ -70,6 +71,13 @@ class SplashState extends State<SplashScreen> {
     savePref(currentIndex);
     subscribeToTopic('beauty');
     _firebaseMessaging.configure(
+      onResume: (Map<String, dynamic> message) {
+        print("I am hereonResume");
+        print(message);
+        Navigator.push(context,
+            MaterialPageRoute(builder: (_) => ActualiteScreen())
+        );
+      },
       onMessage: (Map<String, dynamic> message) async {
         print("onMessage: $message");
         showDialog(
