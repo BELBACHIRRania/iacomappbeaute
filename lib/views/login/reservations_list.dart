@@ -59,12 +59,12 @@ class ReservationsList extends StatelessWidget {
                     Container(
                       height: MediaQuery.of(context).size.height,
                       child: Table(
-                          border: TableBorder.all(color: Color(0xFF34518c),), // Allows to add a border decoration around your table
+                          border: TableBorder.all(color: Color(0xFFCEAA9A),), // Allows to add a border decoration around your table
                           defaultVerticalAlignment: TableCellVerticalAlignment.middle,
                           defaultColumnWidth: FixedColumnWidth(200),
                           children: [
                             TableRow(
-                                decoration: BoxDecoration(color: Colors.grey[300], ),
+                                decoration: BoxDecoration(color: Colors.white, ),
                                 children :[
                                   Container(
                                     width: 200,
@@ -76,7 +76,7 @@ class ReservationsList extends StatelessWidget {
                                             width: 200,
                                             child: Text('Nom & Prénom',)
                                         ),
-                                        Divider(color: Color(0xFF34518c),thickness: 2,),
+                                        Divider(color: Color(0xFFCEAA9A),thickness: 2,),
                                         Container(
                                           padding: const EdgeInsets.all(15),
                                           height: 50,
@@ -84,7 +84,7 @@ class ReservationsList extends StatelessWidget {
                                           child:
                                           Text('E-mail'),
                                         ),
-                                        Divider(color: Color(0xFF34518c),thickness: 2,),
+                                        Divider(color: Color(0xFFCEAA9A),thickness: 2,),
                                         Container(
                                           padding: const EdgeInsets.all(15),
                                           height: 50,
@@ -92,7 +92,7 @@ class ReservationsList extends StatelessWidget {
                                           child:
                                           Text('Numéro de téléphone'),
                                         ),
-                                        Divider(color: Color(0xFF34518c),thickness: 2,),
+                                        Divider(color: Color(0xFFCEAA9A),thickness: 2,),
                                         Container(
                                           padding: const EdgeInsets.all(15),
                                           height: 50,
@@ -100,7 +100,7 @@ class ReservationsList extends StatelessWidget {
                                           child:
                                           Text('Type de prestation'),
                                         ),
-                                        Divider(color: Color(0xFF34518c),thickness: 2,),
+                                        Divider(color: Color(0xFFCEAA9A),thickness: 2,),
                                         Container(
                                           padding: const EdgeInsets.all(15),
                                           height: 50,
@@ -108,7 +108,7 @@ class ReservationsList extends StatelessWidget {
                                           child:
                                           Text('Informations complémentaires'),
                                         ),
-                                        Divider(color: Color(0xFF34518c),thickness: 2,),
+                                        Divider(color: Color(0xFFCEAA9A),thickness: 2,),
                                         Container(
                                           padding: const EdgeInsets.all(15),
                                           height: 50,
@@ -116,7 +116,7 @@ class ReservationsList extends StatelessWidget {
                                           child:
                                           Text('Dates de réservation'),
                                         ),
-                                        Divider(color: Color(0xFF34518c),thickness: 2,),
+                                        Divider(color: Color(0xFFCEAA9A),thickness: 2,),
                                         Container(
                                           padding: const EdgeInsets.all(15),
                                           height: 50,
@@ -139,12 +139,12 @@ class ReservationsList extends StatelessWidget {
                       itemBuilder: (BuildContext context, index) {
                         Reservations reservations = snapshot.data[index];
                         return Table(
-                            border: TableBorder.all(color: Color(0xFF34518c),), // Allows to add a border decoration around your table
+                            border: TableBorder.all(color: Color(0xFFCEAA9A),), // Allows to add a border decoration around your table
                             defaultVerticalAlignment: TableCellVerticalAlignment.middle,
                             defaultColumnWidth: FixedColumnWidth(250),
                             children: [
                               TableRow(
-                                  decoration: BoxDecoration(color: Colors.grey[200], ),
+                                  decoration: BoxDecoration(color: Colors.white, ),
                                   children :[
                                     Container(
                                       child: Column(
@@ -155,7 +155,7 @@ class ReservationsList extends StatelessWidget {
                                               width: 250,
                                               child: Text('${reservations.nom}',)
                                           ),
-                                          Divider(color: Color(0xFF34518c),thickness: 2,),
+                                          Divider(color: Color(0xFFCEAA9A),thickness: 2,),
                                           Container(
                                             padding: const EdgeInsets.all(8),
                                             height: 50,
@@ -163,7 +163,7 @@ class ReservationsList extends StatelessWidget {
                                             child:
                                             Text('${reservations.mail}'),
                                           ),
-                                          Divider(color: Color(0xFF34518c),thickness: 2,),
+                                          Divider(color: Color(0xFFCEAA9A),thickness: 2,),
                                           Container(
                                             padding: const EdgeInsets.all(8),
                                             height: 50,
@@ -171,7 +171,7 @@ class ReservationsList extends StatelessWidget {
                                             child:
                                             Text('0${reservations.tel}'),
                                           ),
-                                          Divider(color: Color(0xFF34518c),thickness: 2,),
+                                          Divider(color: Color(0xFFCEAA9A),thickness: 2,),
                                           Container(
                                             padding: const EdgeInsets.all(8),
                                             height: 50,
@@ -179,7 +179,7 @@ class ReservationsList extends StatelessWidget {
                                             child:
                                             Text('${reservations.type}'),
                                           ),
-                                          Divider(color: Color(0xFF34518c),thickness: 2,),
+                                          Divider(color: Color(0xFFCEAA9A),thickness: 2,),
                                           Container(
                                             padding: const EdgeInsets.all(8),
                                             height: 50,
@@ -187,7 +187,7 @@ class ReservationsList extends StatelessWidget {
                                             child:
                                             Text('${reservations.info_complementaire}'),
                                           ),
-                                          Divider(color: Color(0xFF34518c),thickness: 2,),
+                                          Divider(color: Color(0xFFCEAA9A),thickness: 2,),
                                           Container(
                                             padding: const EdgeInsets.all(8),
                                             height: 50,
@@ -195,7 +195,7 @@ class ReservationsList extends StatelessWidget {
                                             child:
                                             Text('${reservations.dates_resa}'),
                                           ),
-                                          Divider(color: Color(0xFF34518c),thickness: 2,),
+                                          Divider(color: Color(0xFFCEAA9A),thickness: 2,),
                                           Container(
                                             padding: const EdgeInsets.all(8),
                                             height: 50,
